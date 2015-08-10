@@ -1,0 +1,3 @@
+[submodule "it2"]
+	path = it2
+	url = https://github.com/johanhake/it2.git
