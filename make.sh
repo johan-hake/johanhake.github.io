@@ -3,6 +3,7 @@ doconce format html index --html_style=bootswatch_readable --html_bootstrap_jumb
 #doconce replace '<ul>' '<p>&nbsp;&nbsp;<p><ul>' index.html
 rm -f .*html_file_collection
 
+exit
 pushd it2
 bash make.sh
 popd
