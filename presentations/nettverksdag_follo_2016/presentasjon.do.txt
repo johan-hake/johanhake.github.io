@@ -201,28 +201,28 @@ FIGURE: [fig/diskret_funksjon.svg, frac=0.6]
 * Hvis $df(t)$ er en funksjon som gir den deriverte av $y$, $\frac{dy}{dt}$, ved tiden $t$ kan vi skrive:
 * $\frac{dy}{dt}=df(t)\simeq \frac{\Delta y}{\Delta t}=>$
 * $\Delta y = df(t) \Delta t$. Her er en liten forandring i $y$, $\Delta y$ gitt ved en liten forandring i $t$, $\Delta t$.
-* Hvis vi nå har en liste med $N+1$ tidspunkter $t=[t_0, t_1, \ldots, t_N]$ hvor hvert tidspunkt gis fra det forrige som: $t_{n+1}=t_n+\Delta t$
-* kan vi formulere den neste funksjonsverdien, $y_{n+1}$ fra det forrige, $y_{n}$ gjennom: $y_{n+1}=y_n+\Delta y_n=y_n+df(t_n) \Delta t$
-* Ofte er den deriverte avhengig av funksjonsverdien: $y_n=y_n+df(t_n, y_n)$
+* Hvis vi nå har en liste med $N+1$ tidspunkter $t=[t_0, t_1, \ldots, t_N]$ hvor hvert tidspunkt gis fra det forrige som: $t_{n+1}=t_i+\Delta t$
+* kan vi formulere den neste funksjonsverdien, $y_{n+1}$ fra det forrige, $y_{n}$ gjennom: $y_{n+1}=y_i+\Delta y_i=y_i+df(t_i) \Delta t$
+* Ofte er den deriverte avhengig av funksjonsverdien: $y_i=y_i+df(t_i, y_i)$
 * Vi har et numerisk skjema!
 !epop
 
 !split
 
-=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
 
 FIGURE: [fig/diskret_funksjon_0.svg, width=700]
 
 * Gitt at vi har regnet ut 3 punkter: $y_0$, $y_1$, og $y_2$
 !split
-=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
 
 FIGURE: [fig/diskret_funksjon_1.svg, width=700]
 
 * kan vi beregne neste verdi gjennom å regne ut $\Delta y_2$
 !split
 
-=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
 
 FIGURE: [fig/diskret_funksjon_3.svg, width=700]
 
@@ -230,7 +230,7 @@ FIGURE: [fig/diskret_funksjon_3.svg, width=700]
 
 !split
 
-=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
 
 FIGURE: [fig/diskret_funksjon_5.svg, width=700]
 
@@ -259,19 +259,20 @@ Vi skal prøve å bruke Jupyter-notebook som skal kjøre Python skriptet i nettl
 
 !bslidecell 00
 * Metode 1 (mer omstendelig og mer pålitelig)
- * Last ned "index.ipynb" fra "'bit.ly/strikk_hopp'" : "bit.ly/strikk_hopp" og lagre den som "index.ipynb"
- * Gå til "'https://try.jupyter.org'" : "https://try.jupyter.org"
+ * Last ned "index.ipynb" fra "http://bit.ly/strikk_hopp" : "http://bit.ly/strikk_hopp" og lagre den som "index.ipynb"
+ * Gå til "https://try.jupyter.org" : "https://try.jupyter.org"
  * Gå til Files og velg "open" og så last opp (upload)
  * Last opp din fil "index.ipynb" og åpne den
 !eslidecell
 
 !bslidecell 01
 * Metode 2 (mindre omstendelig men ganske treig å få satt igang)
- * Gå til "'http://mybinder.org'" : "http://mybinder.org"
- * Skriv inn "'johanhake/strikkhopp'" i "Tell us your GitHub repo"
- * Trykk på "'make my binder'"
- * Vent i 4 minutter...
+ * Gå til "http://mybinder.org" : "http://mybinder.org"
+ * Skriv inn "johanhake/strikkhopp" i "Tell us your GitHub repo"
+ * Trykk på "make my binder"
+ * Når alle stegene er klare trykker du "launch binder" til høyre
 !eslidecell
+* Nå kan du se hvordan algoritmen er implementert og leke med parametrer
 
 ### ======= Programmering i grundskolen =======
 ### 

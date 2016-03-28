@@ -472,9 +472,9 @@ $$\hat{t}=[0, 0.2, \ldots, 1.0]$$
 <p><li class="fragment"> Hvis \( df(t) \) er en funksjon som gir den deriverte av \( y \), \( \frac{dy}{dt} \), ved tiden \( t \) kan vi skrive:</li>
 <p><li class="fragment"> \( \frac{dy}{dt}=df(t)\simeq \frac{\Delta y}{\Delta t}=> \)</li>
 <p><li class="fragment"> \( \Delta y = df(t) \Delta t \). Her er en liten forandring i \( y \), \( \Delta y \) gitt ved en liten forandring i \( t \), \( \Delta t \).</li>
-<p><li class="fragment"> Hvis vi n&#229; har en liste med \( N+1 \) tidspunkter \( t=[t_0, t_1, \ldots, t_N] \) hvor hvert tidspunkt gis fra det forrige som: \( t_{n+1}=t_n+\Delta t \)</li>
-<p><li class="fragment"> kan vi formulere den neste funksjonsverdien, \( y_{n+1} \) fra det forrige, \( y_{n} \) gjennom: \( y_{n+1}=y_n+\Delta y_n=y_n+df(t_n) \Delta t \)</li>
-<p><li class="fragment"> Ofte er den deriverte avhengig av funksjonsverdien: \( y_n=y_n+df(t_n, y_n) \)</li>
+<p><li class="fragment"> Hvis vi n&#229; har en liste med \( N+1 \) tidspunkter \( t=[t_0, t_1, \ldots, t_N] \) hvor hvert tidspunkt gis fra det forrige som: \( t_{n+1}=t_i+\Delta t \)</li>
+<p><li class="fragment"> kan vi formulere den neste funksjonsverdien, \( y_{n+1} \) fra det forrige, \( y_{n} \) gjennom: \( y_{n+1}=y_i+\Delta y_i=y_i+df(t_i) \Delta t \)</li>
+<p><li class="fragment"> Ofte er den deriverte avhengig av funksjonsverdien: \( y_i=y_i+df(t_i, y_i) \)</li>
 <p><li class="fragment"> Vi har et numerisk skjema!</li>
 </ul>
 </section>
@@ -482,7 +482,7 @@ $$\hat{t}=[0, 0.2, \ldots, 1.0]$$
 
 <section>
 
-<h3 id="___sec19">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec19">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_0.svg" align="bottom" width=700></p></center>
@@ -495,7 +495,7 @@ $$\hat{t}=[0, 0.2, \ldots, 1.0]$$
 
 <section>
 
-<h3 id="___sec20">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec20">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_1.svg" align="bottom" width=700></p></center>
@@ -508,7 +508,7 @@ $$\hat{t}=[0, 0.2, \ldots, 1.0]$$
 
 <section>
 
-<h3 id="___sec21">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec21">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_3.svg" align="bottom" width=700></p></center>
@@ -521,7 +521,7 @@ $$\hat{t}=[0, 0.2, \ldots, 1.0]$$
 
 <section>
 
-<h3 id="___sec22">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec22">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_5.svg" align="bottom" width=700></p></center>
@@ -566,8 +566,8 @@ Vi skal pr&#248;ve &#229; bruke Jupyter-notebook som skal kj&#248;re Python skri
 <p><li> Metode 1 (mer omstendelig og mer p&#229;litelig)</li>
 
 <ul>
- <p><li> Last ned "index.ipynb" fra "'bit.ly/strikk_hopp'" : "bit.ly/strikk_hopp" og lagre den som "index.ipynb"</li>
- <p><li> G&#229; til <a href="https://try.jupyter.org" target="_blank">'https://try.jupyter.org'</a></li>
+ <p><li> Last ned "index.ipynb" fra <a href="http://bit.ly/strikk_hopp" target="_blank">http://bit.ly/strikk_hopp</a> og lagre den som "index.ipynb"</li>
+ <p><li> G&#229; til <a href="https://try.jupyter.org" target="_blank">https://try.jupyter.org</a></li>
  <p><li> G&#229; til Files og velg "open" og s&#229; last opp (upload)</li>
  <p><li> Last opp din fil "index.ipynb" og &#229;pne den</li>
 </ul>
@@ -580,10 +580,10 @@ Vi skal pr&#248;ve &#229; bruke Jupyter-notebook som skal kj&#248;re Python skri
 <p><li> Metode 2 (mindre omstendelig men ganske treig &#229; f&#229; satt igang)</li>
 
 <ul>
- <p><li> G&#229; til <a href="http://mybinder.org" target="_blank">'http://mybinder.org'</a></li>
- <p><li> Skriv inn "'johanhake/strikkhopp'" i "Tell us your GitHub repo"</li>
- <p><li> Trykk p&#229; "'make my binder'"</li>
- <p><li> Vent i 4 minutter...</li>
+ <p><li> G&#229; til <a href="http://mybinder.org" target="_blank">http://mybinder.org</a></li>
+ <p><li> Skriv inn "johanhake/strikkhopp" i "Tell us your GitHub repo"</li>
+ <p><li> Trykk p&#229; "make my binder"</li>
+ <p><li> N&#229;r alle stegene er klare trykker du "launch binder" til h&#248;yre</li>
 </ul>
 <p>
 </ul>
@@ -591,6 +591,11 @@ Vi skal pr&#248;ve &#229; bruke Jupyter-notebook som skal kj&#248;re Python skri
 </td>
 </tr>
 </table>
+
+
+<ul>
+<p><li> N&#229; kan du se hvordan algoritmen er implementert og leke med parametrer</li>
+</ul>
 </section>
 
 
