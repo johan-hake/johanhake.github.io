@@ -258,7 +258,7 @@ FIGURE: [fig/diskret_funksjon_5.svg, width=700]
 Vi skal prøve å bruke Jupyter-notebook som skal kjøre Python skriptet i nettleseren deres. For å få til dette kan dere prøve 1 av 2 metoder:
 
 !bslidecell 00
-* Metode 1 (mindre omstendelig men ganske treig å få satt igang)
+* Metode 1 (mindre omstendelig men noe treig å få satt igang)
  * Gå til "http://mybinder.org" : "http://mybinder.org"
  * Skriv inn "johanhake/strikkhopp" i "Tell us your GitHub repo"
  * Trykk på "make my binder"
