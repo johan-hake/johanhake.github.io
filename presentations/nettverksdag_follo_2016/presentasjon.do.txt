@@ -274,6 +274,14 @@ Vi skal prøve å bruke Jupyter-notebook som skal kjøre Python skriptet i nettl
 !eslidecell
 * Nå kan du se hvordan algoritmen er implementert og leke med parametrer
 
+!split
+
+======= Takk! =======
+* Hilde Bjørndalen for å invitere meg hit
+* Prof. Andrew McCulloch som veiledet meg under PostDoc oppeholdet i San Diego
+* Prof. Hans Petter Langtangen som har vært visjonær mht matematisk modellering og som har fått Olavs Thons formiddlingspris for 2016
+* Jonas Van den Brink som har utviklet Python koden for strikkhoppet
+
 ### ======= Programmering i grundskolen =======
 ### 
 ### "Sverige satser":"http://www.regeringen.se/debattartiklar/2015/09/programmering-in-pa-schemat-i-ny-skolstrategi"
