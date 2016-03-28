@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
-bash clean.sh
+#bash clean.sh
 
 function system {
   "$@"

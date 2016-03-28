@@ -6,176 +6,232 @@ DATE: 29. mars 2016
 
 !split
 
-======= Hvorfor og hvordan kan programering kombineres med de andre realfagene =======
-
-=== Oversikt ===
-
-* Hvordan har jeg brukt informatikk i medisinsk hjerteforskning
-* Hvorfor programmering
-* Informatikk i læreplanen idag!
-* Matematisk modellering i de klassiske realfagene
-
-!split
-
-======= Hjerte ABC: Hver hjerteslag startes og synkroniseres av en elektrisk signal =======
-
-FIGURE: [fig/heart_scetch.svg, width=500]
-
-
-!split
-======= Hjerte ABC: Den elektriske signalen er det vi måler gjennom EKG =======
-
-FIGURE: [fig/ecg.jpg, width=650]
-
-!split
-
-======= Hjerte ABC: I hver celle trigger den elektriske signalen en forsinket kontraksjon =======
-
-!bslidecell 00
-* Kalsium formidler informasjonen om kontraksjonen til cellen
-!eslidecell
-
-!bslidecell 01
-FIGURE: [fig/AP_Ca_contraction.svg, width=750]
-
-!eslidecell
-
-!split
-
-======= Hjerte ABC: I hver celle trigger den elektriske signalen en forsinket kontraksjon =======
-
-!bslidecell 00
-* Kalsium formidler informasjonen om kontraksjonen til cellen
-* Kalsium slippes inn i cellen gjennom egne ionekanaler
-!eslidecell
-
-!bslidecell 01
-FIGURE: [fig/cell_membrane.jpg, width=750]
-
-!eslidecell
-
-!split
-
-=== Hvor mye kalsium som kommer ut bestemmes av en komplisert kombinasjon av geometri og kanalfunksjon ===
-
-FIGURE: [fig/sarcomere_nice_black.svg, width=800]
-
-* Vi har ikke full kvantiatativ forståelse av hva som kontrollerer
-  hvor mye kalsium som kommer ut i cellen for hvert hjerteslag
-
-!split
-=== Selve kalsiumet kommer ut i rundt 20 000 geometriske områder som er for små for å studere i labben ===
-
-FIGURE: [fig/sarcomere_nice_black_blowup.svg, width=800]
-
-* Gjennom matematisk modelering kan vi gi sykehusene svar på noen
-  spørsmål de ikke kan få svar på gjennom egne målinger
-
-!split
-
+### ======= Hvorfor og hvordan kan programering kombineres med de andre realfagene =======
+### 
+### === Oversikt ===
+### 
+### * Hvordan har jeg brukt informatikk i medisinsk hjerteforskning
+### * Hvorfor programmering
+### * Informatikk i læreplanen idag!
+### * Matematisk modellering i de klassiske realfagene
+### 
+### !split
+### 
+### ======= Hjerte ABC: Hver hjerteslag startes og synkroniseres av en elektrisk signal =======
+### 
+### FIGURE: [fig/heart_scetch.svg, width=500]
+### 
+### 
+### !split
+### ======= Hjerte ABC: Den elektriske signalen er det vi måler gjennom EKG =======
+### 
+### FIGURE: [fig/ecg.jpg, width=650]
+### 
+### !split
+### 
+### ======= Hjerte ABC: I hver celle trigger den elektriske signalen en forsinket kontraksjon =======
+### 
+### !bslidecell 00
+### * Kalsium formidler informasjonen om kontraksjonen til cellen
+### !eslidecell
+### 
+### !bslidecell 01
+### FIGURE: [fig/AP_Ca_contraction.svg, width=750]
+### 
+### !eslidecell
+### 
+### !split
+### 
+### ======= Hjerte ABC: I hver celle trigger den elektriske signalen en forsinket kontraksjon =======
+### 
+### !bslidecell 00
+### * Kalsium formidler informasjonen om kontraksjonen til cellen
+### * Kalsium slippes inn i cellen gjennom egne ionekanaler
+### !eslidecell
+### 
+### !bslidecell 01
+### FIGURE: [fig/cell_membrane.jpg, width=750]
+### 
+### !eslidecell
+### 
+### !split
+### 
 ### === Hvor mye kalsium som kommer ut bestemmes av en komplisert kombinasjon av geometri og kanalfunksjon ===
 ### 
-### FIGURE: [fig/dyadic_cleft_black.svg, width=800]
+### FIGURE: [fig/sarcomere_nice_black.svg, width=800]
+### 
+### * Vi har ikke full kvantiatativ forståelse av hva som kontrollerer
+###   hvor mye kalsium som kommer ut i cellen for hvert hjerteslag
+### 
+### !split
+### === Selve kalsiumet kommer ut i rundt 20 000 geometriske områder som er for små for å studere i labben ===
+### 
+### FIGURE: [fig/sarcomere_nice_black_blowup.svg, width=800]
+### 
+### * Gjennom matematisk modelering kan vi gi sykehusene svar på noen
+###   spørsmål de ikke kan få svar på gjennom egne målinger
+### 
+### !split
+### 
+### ### === Hvor mye kalsium som kommer ut bestemmes av en komplisert kombinasjon av geometri og kanalfunksjon ===
+### ### 
+### ### FIGURE: [fig/dyadic_cleft_black.svg, width=800]
+### ### 
+### ### !split
+### 
+### === Fra et set med bilder fra et elektronmikroskop lagde jeg en model av geometrien som tog vare på de geometriske detaljene ===
+### 
+### MOVIE: [fig/segmentation_2.mp4, height=536 width=850]
+### 
+### !split
+### 
+### ### === Så ble geometrien forfinet og annoterte med ulike aktive delene ===
+### ### 
+### ### MOVIE: [fig/Model-movie_2.mp4, height=540 width=850]
+### ### 
+### ### !split
+### ###
+### 
+### === Så ble geometrien diskretisert og volumet ble oppdelt i mindre deler ===
+### 
+### MOVIE: [fig/Tetrahedralized.mp4, height=540 width=850]
+### 
+### !split
+### 
+### === Til slutt beskrev jeg kalsium dynamikken i geometrien med en matematisk modell som ble løst for ulike parameter verdier ===
+### 
+### MOVIE: [fig/fluo_spark_2.mp4, height=546 width=850]
+### 
+### !split
+### 
+### ======= Hva fra dette eksemplet er overførbart til bruk av IKT og programmering på VGS? =======
+### 
+### !bpop
+### * Som motivasjon til å:
+###   * lære seg programmering
+###   * jobbe med matematisk modelering
+###   * arbeide tverrfaglig
+### * Sette søkelys på hvilke kunnskaper elevene trenger for å arbeide med matematisk modelering i ulike realfag
+### !epop
+### 
+### !split
+### 
+### === Holder det ikke med de digitale ferdighetene slik vi kjenner de fra grunnleggende ferdigheter i læreplanen? ===
+### 
+### !bpop
+### * Digitale ferdigheter er enligt meg en altfor generell betegnelse for å dekke behovet av spesifikk programeringskompetanse
+### * Det handler om mye mer enn å bare ta ferdig digital teknologi i bruk!
+### * Eleven må forstå hvordan den digitale teknologin fungererer og kunne utvikle sin egen
+### * Programmering gir oss også kunskaper om problemløsning (jmf oppgaveløsning/forsøk i andre realfag!)
+### !epop
+### ### * IKT 
+### ### * Mange IKt verktøy er 
+### 
+### ### Programmering er i sin essense tverrfaglig
+### ### 
+### ### FIGURE: [fig/LKK, width=400]
+### ### * Programmering er et marginalisert fag i Norge
+### 
+### !split
+### 
+### === Programmering og IT er et marginalisert fag i Norsk skole og risikerer å fortsett være det. Men det finnes lyspunkter! ===
+### 
+### FIGURE: [fig/computing_our_future.png, width=750]
+### 
+### * Helt nytt (1.2.16) forsøk med valgvalg i programmering i "grunnskolen" : "http://www.udir.no/Lareplaner/Forsok-og-pagaende-arbeid/forsok-med-programmering-som-valgfag"
+### * "Lær kidsa kode" : "http://kidsakoder.no"
+### 
+### !split
+### 
+### === Ludvigsen utvalget understreker viktigheten av digital kompetanse men sier ikke noe spesifikt om IT eller programmering som eget fag (foreløpelig) ===
+### !bslidecell 00
+### * "Matematikk, statestikk og informatikk vil bli mer og mer fremtredende innenfor klassiske naturvitenskapelige disipliner som biologi, fysikk, kjemi og geofag." (s 54)
+###  * Men det følges ikke opp med mer spesifike tanker om informatikk, deremot om matematikk. 
+### * Ordene kode/koding programmere/programmering finnes ikke noe steder i utredningen...
+### !eslidecell
+### !bslidecell 01
+### FIGURE: [fig/ludvigsen.png, width=550]
+### !eslidecell
+### !split
+### 
+### === Vi har et programmeringsfag i skolen idag, IT2, men det er mer rettet mot multimedia enn mot de andre realfagene og lar seg ikke lett kombineres med matematisk modelering... ===
+### 
+### * Disse eksempel er meget læreplans-relevante (EKSAMENS?!) for IT2 men de har kanskje ikke allverdens med realfag å gjøre? (fuglequiz!)
+###  * "Fuglequiz":"kode/fugler.html"
+###  * "Rudolf":"kode/oppgaver_animasjon_9.html"
+### 
+### !split
+### 
+### === Hvordan kan matematisk modelering og programmering integrerers i dagens realfag? ===
+### * Vi bruker allerede matematisk modelering i mange fag!
+###  * Men vi tilbyr oftest bare en analytisk løsning
+### 
+### !bpop
+### * Bevegelseslikningene for konstant akselerasjon i fysikk: $v(t)= v_0 + a\,t;\; s = v_0\,t + a\,t^2/2$
+### * S-kurven for biologiske bestand: $Y(t)= \frac{M}{1-e^{-rt}}$
+### * Kjemisk likevekt: $\mathrm{K_p=\frac{[NH_3]^2}{[N_2]\cdot[H_2]^3}}$
+### * Forholdsvis enkle numeriske sjkema kan brukes for å løse ursprungslikningene og i tilegg gjøre de mer relevante!
+### !epop
 ### 
 ### !split
 
-=== Fra et set med bilder fra et elektronmikroskop lagde jeg en model av geometrien som tog vare på de geometriske detaljene ===
+=== Løsninger man får fra numeriske skjema skiller seg fra analytiske funksjoner gjennom at vi bare kjenner løsningen på diskrete punkter i tid (og rom) ===
 
-MOVIE: [fig/segmentation_2.mp4, height=536 width=850]
-
-!split
-
-### === Så ble geometrien forfinet og annoterte med ulike aktive delene ===
-### 
-### MOVIE: [fig/Model-movie_2.mp4, height=540 width=850]
-### 
-### !split
-###
-
-=== Så ble geometrien diskretisert og volumet ble oppdelt i mindre deler ===
-
-MOVIE: [fig/Tetrahedralized.mp4, height=540 width=850]
-
-!split
-
-=== Til slutt beskrev jeg kalsium dynamikken i geometrien med en matematisk modell som ble løst for ulike parameter verdier ===
-
-MOVIE: [fig/fluo_spark_2.mp4, height=546 width=850]
-
-!split
-
-======= Hva fra dette eksemplet er overførbart til bruk av IKT og programmering på VGS? =======
-
-!bpop
-* Som motivasjon til å:
-  * lære seg programmering
-  * jobbe med matematisk modelering
-  * arbeide tverrfaglig
-* Sette søkelys på hvilke kunnskaper elevene trenger for å arbeide med matematisk modelering i ulike realfag
-!epop
-
-!split
-
-=== Holder det ikke med de digitale ferdighetene slik vi kjenner de fra grunnleggende ferdigheter i læreplanen? ===
-
-!bpop
-* Digitale ferdigheter er enligt meg en altfor generell betegnelse for å dekke behovet av spesifikk programeringskompetanse
-* Det handler om mye mer enn å bare ta ferdig digital teknologi i bruk!
-* Eleven må forstå hvordan den digitale teknologin fungererer og kunne utvikle sin egen
-* Programmering gir oss også kunskaper om problemløsning (jmf oppgaveløsning/forsøk i andre realfag!)
-!epop
-### * IKT 
-### * Mange IKt verktøy er 
-
-### Programmering er i sin essense tverrfaglig
-### 
-### FIGURE: [fig/LKK, width=400]
-### * Programmering er et marginalisert fag i Norge
-
-!split
-
-=== Programmering og IT er et marginalisert fag i Norsk skole og risikerer å fortsett være det. Men det finnes lyspunkter! ===
-
-FIGURE: [fig/computing_our_future.png, width=750]
-
-* Helt nytt (1.2.16) forsøk med valgvalg i programmering i "grunnskolen" : "http://www.udir.no/Lareplaner/Forsok-og-pagaende-arbeid/forsok-med-programmering-som-valgfag"
-* "Lær kidsa kode" : "http://kidsakoder.no"
-
-!split
-
-=== Ludvigsen utvalget understreker viktigheten av digital kompetanse men sier ikke noe spesifikt om IT eller programmering som eget fag (foreløpelig) ===
-!bslidecell 00
-* "Matematikk, statestikk og informatikk vil bli mer og mer fremtredende innenfor klassiske naturvitenskapelige disipliner som biologi, fysikk, kjemi og geofag." (s 54)
- * Men det følges ikke opp med mer spesifike tanker om informatikk, deremot om matematikk. 
-* Ordene kode/koding programmere/programmering finnes ikke noe steder i utredningen...
-
-!eslidecell
-
-!bslidecell 01
-FIGURE: [fig/ludvigsen.png, width=350]
-
-!eslidecell
-!split
-
-=== Vi har et programmeringsfag i skolen idag, IT2, men det er mer rettet mot multimedia enn mot de andre realfagene og lar seg ikke lett kombineres med matematisk modelering... ===
-
-* Disse eksempel er meget læreplans-relevante (EKSAMENS?!) for IT2 men de har kanskje ikke allverdens med realfag å gjøre? (fuglequiz!)
- * "Fuglequiz":"kode/fugler.html"
- * "Rudolf":"kode/oppgaver_animasjon_9.html"
-
-!split
-
-=== Hvordan kan matematisk modelering og programmering integrerers i dagens realfag? ===
-* Vi bruker allerede matematisk modelering i mange fag!
- * Men vi tilbyr oftest bare en analytisk løsning
-* Bevegelseslikningene for konstant akselerasjon i fysikk:
+!bslidecell 00 0.4
+* Hvis $\hat{t}$ er en liste (vektor) med tidspunkter for tiden
 !bt
-\begin{align}
-s^{''}&=a\\
-v(t)=s^{'}(t)&= v_0 + a\,t\\
-s &= s_0 + v_0\,t + \frac{a\,t^2}{2}
-\end{align}
+\hat{t}=[0, 0.1, \ldots, 1.0]
 !et
+* kan $y$ representere verdiene til en funksjon $f(\hat{t})$ i disse punktene.
+!eslidecell
+
+!bslidecell 01 0.6
+FIGURE: [fig/diskret_funksjon.svg, frac=0.6]
+!eslidecell
+
+!split
+
+=== Differensiallikninger finner vi i alle realfagene og disse kan løses med enkle numeriske skjema ===
+
+* Hovedidéen er at vi gjennom differensiallikningen vet hvor mye en funksjon endrer seg når tiden endrer seg litt.
+!bpop
+* Hvis $df(t)$ er en funksjon som gir den deriverte av $y$, $\frac{dy}{dt}$, ved tiden $t$ kan vi skrive:
+* $\frac{dy}{dt}=df(t)\simeq \frac{\Delta y}{\Delta t}=>$
+* $\Delta y = df(t) \Delta t$. Her er en liten forandring i $y$, $\Delta y$ gitt ved en liten forandring i $t$, $\Delta t$.
+* Hvis vi nå har en liste med $N+1$ tidspunkter $t=[t_0, t_1, \ldots, t_N]$ hvor hver tidspunkt gis fra den forrige som: $t_{n+1}=t_n+\Delta t$
+* kan vi formulere det neste funksjonsverdien, $y_{n+1}$ fra det forrige, $y_{n}$ gjennom: $y_{n+1}=y_n+\Delta y_n=y_n+df(t_n) \Delta t$
+* Ofte er den deriverte avhengig av funksjonsverdien: $y_n=y_n+df(t_n, y_n)$
+* Vi har et numerisk skjema!
+!epop
+
+!split
+
+=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+
+FIGURE: [fig/diskret_funksjon_0.svg, width=700]
+
+* Gitt at vi har regnet ut 3 punkter: $y_0$, $y_1$, og $y_2$
+!split
+=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+
+FIGURE: [fig/diskret_funksjon_1.svg, width=700]
+
+* kan vi beregne neste verdi gjennom å regne ut $\Delta y_2$
+!split
+
+=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+
+FIGURE: [fig/diskret_funksjon_3.svg, width=700]
+
+* og legge til $y_2$. Vi har nå regnet ut $y_0 \ldots y_3$.
+
+!split
+
+=== Visualisering av det numeriske skjemaet med $y_n$, $\Delta y_n$ ===
+
+FIGURE: [fig/diskret_funksjon_5.svg, width=700]
+
+* Og vi kan fortsette med neste verdi $y_4$. Og så går nå dagene...
 
 !split
 
@@ -186,7 +242,6 @@ s &= s_0 + v_0\,t + \frac{a\,t^2}{2}
 ### "Kode kurs for ungdomskole lærere": "http://dalsaune.no/post/141167389327/kodekurs-for-l%C3%A6rere-i-trondheim"
 ### 
 ### !split
-
 
 ### ===== Implementation: Python program is embedded in a web service, Python Online Tutor, which enables stepwise execution and examination of variables =====
 ### 
