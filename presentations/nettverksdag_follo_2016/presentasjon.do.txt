@@ -258,21 +258,20 @@ FIGURE: [fig/diskret_funksjon_5.svg, width=700]
 Vi skal prøve å bruke Jupyter-notebook som skal kjøre Python skriptet i nettleseren deres. For å få til dette kan dere prøve 1 av 2 metoder:
 
 !bslidecell 00
-* Metode 1 (mer omstendelig og mer pålitelig)
- * Last ned "index.ipynb" fra "http://bit.ly/strikk_hopp" : "http://bit.ly/strikk_hopp" og lagre den som "index.ipynb"
- * Gå til "https://try.jupyter.org" : "https://try.jupyter.org"
- * Gå til Files og velg "open" og så last opp (upload)
- * Last opp din fil "index.ipynb" og åpne den
-!eslidecell
-
-!bslidecell 01
-* Metode 2 (mindre omstendelig men ganske treig å få satt igang)
+* Metode 1 (mindre omstendelig men ganske treig å få satt igang)
  * Gå til "http://mybinder.org" : "http://mybinder.org"
  * Skriv inn "johanhake/strikkhopp" i "Tell us your GitHub repo"
  * Trykk på "make my binder"
  * Når alle stegene er klare trykker du "launch binder" til høyre
 !eslidecell
-* Nå kan du se hvordan algoritmen er implementert og leke med parametrer
+
+!bslidecell 01
+* Metode 2 (mer omstendelig og mer pålitelig men du taper en figur!)
+ * Last ned "index.ipynb" fra "http://bit.ly/strikk_hopp" : "http://bit.ly/strikk_hopp" og lagre den som "index.ipynb"
+ * Gå til "https://try.jupyter.org" : "https://try.jupyter.org"
+ * Gå til Files og velg "open" og så last opp (upload)
+ * Last opp din fil "index.ipynb" og åpne den
+!eslidecell
 
 !split
 
