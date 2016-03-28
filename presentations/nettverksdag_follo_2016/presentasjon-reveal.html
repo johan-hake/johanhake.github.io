@@ -134,10 +134,10 @@ MathJax.Hub.Config({
 <center><h1 style="text-align: center;">Spennende kombinasjoner av informatikk og andre realfag</h1></center>  <!-- document title -->
 
 <p>
-<!-- author(s): - hvorfor og hvordan kan programering kombineres med de andre realfagene -->
+<!-- author(s): - hvorfor og hvordan kan programmering kombineres med de andre realfagene -->
 
 <center>
-<b>- hvorfor og hvordan kan programering kombineres med de andre realfagene</b> 
+<b>- hvorfor og hvordan kan programmering kombineres med de andre realfagene</b> 
 </center>
 
 <p>&nbsp;<br>
@@ -152,8 +152,38 @@ MathJax.Hub.Config({
 
 
 <section>
+<h1 id="___sec0">Hvorfor og hvordan kan programmering kombineres med de andre realfagene </h1>
 
-<h3 id="___sec0">L&#248;sninger man f&#229;r fra numeriske skjema skiller seg fra analytiske funksjoner gjennom at vi bare kjenner l&#248;sningen p&#229; diskrete punkter i tid (og rom) </h3>
+<h3 id="___sec1">Oversikt </h3>
+
+<ul>
+<p><li> Hvordan har jeg brukt informatikk og programmering i medisinsk hjerteforskning?</li>
+<p><li> Hvorfor programmering?</li>
+<p><li> Informatikk og programmering i l&#230;replanen idag og hva sier Ludvigsen?</li>
+<p><li> Kortkurs i matematisk modellering</li>
+<p><li> Fremtiden?</li>
+</ul>
+</section>
+
+
+<section>
+<h1 id="___sec2">Hjerte ABC: Hvert hjerteslag startes og synkroniseres av et elektrisk signal </h1>
+
+<p>
+<center><p><img src="fig/heart_scetch.svg" align="bottom" width=500></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec3">Hjerte ABC: Det elektriske signalet er det vi m&#229;ler gjennom EKG </h1>
+
+<p>
+<center><p><img src="fig/ecg.jpg" align="bottom" width=650></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec4">Hjerte ABC: I hver celle trigger det elektriske signalet en forsinket sammentrekning </h1>
 
 <p>
 
@@ -161,11 +191,261 @@ MathJax.Hub.Config({
 <tr>
 <td class="padding">
 <ul>
-<p><li> Hvis \( \hat{t} \) er en liste (vektor) med tidspunkter for tiden</li>
+<p><li> Kalsium gir cellen signalet om at sammentrekningen skal starte</li>
+</ul>
+<p>
+</td>
+<td class="padding">
+<center><p><img src="fig/AP_Ca_contraction.svg" align="bottom" width=750></p></center>
+
+<p>
+</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+<h1 id="___sec5">Hjerte ABC: I hver celle trigger det elektriske signalet en forsinket sammentrekning </h1>
+
+<p>
+
+<table border="0">
+<tr>
+<td class="padding">
+<ul>
+<p><li> Kalsium gir cellen signalet om at sammentrekningen skal starte</li>
+<p><li> Kalsium slippes inn i cellen gjennom egne ionekanaler</li>
+</ul>
+<p>
+</td>
+<td class="padding">
+<center><p><img src="fig/cell_membrane.jpg" align="bottom" width=750></p></center>
+
+<p>
+</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+
+<h3 id="___sec6">Hvor mye kalsium som kommer ut bestemmes av en komplisert kombinasjon av geometri og kanalfunksjon </h3>
+
+<p>
+<center><p><img src="fig/sarcomere_nice_black.svg" align="bottom" width=800></p></center>
+
+<ul>
+<p><li> Vi har ikke full kvantiatativ forst&#229;else av hva som kontrollerer
+  hvor mye kalsium som kommer inn i cellen for hvert hjerteslag</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec7">Selve kalsiumet kommer inn i cellen i rundt 20 000 ulike omr&#229;der som er for sm&#229; til &#229; studeres i fysiologiske eksperimenter </h3>
+
+<p>
+<center><p><img src="fig/sarcomere_nice_black_blowup.svg" align="bottom" width=800></p></center>
+
+<ul>
+<p><li> Gjennom matematisk modellering kan vi gi sykehusene svar p&#229; noen
+  sp&#248;rsm&#229;l de ikke kan f&#229; svar p&#229; gjennom egne m&#229;linger</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec8">Fra et sett med bilder fra et elektronmikroskop lagde jeg en geometrisk modell av et av disse 20 000 omr&#229;dene </h3>
+
+<p>
+
+<div>
+<video  loop controls width='850' height='536' preload='auto'>
+    <source src='fig/segmentation_2.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+</section>
+
+
+<section>
+
+<h3 id="___sec9">Den geometriske modellen ble s&#229; delt opp i flere mindre deler (diskretisert) </h3>
+
+<p>
+
+<div>
+<video  loop controls width='850' height='540' preload='auto'>
+    <source src='fig/Tetrahedralized.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+</section>
+
+
+<section>
+
+<h3 id="___sec10">Til slutt beskrev jeg selve kalsiumdynamikken med en matematisk modell som ble l&#248;st for ulike parameterverdier </h3>
+
+<p>
+
+<div>
+<video  loop controls width='850' height='546' preload='auto'>
+    <source src='fig/fluo_spark_2.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+</section>
+
+
+<section>
+<h1 id="___sec11">Hva fra dette eksemplet er overf&#248;rbart til bruk av IT og programmering p&#229; VGS? </h1>
+
+<ul>
+<p><li class="fragment"> Som motivasjon til &#229;:</li>
+
+<ul>
+
+<p><li class="fragment"> l&#230;re seg programmering</li>
+
+<p><li class="fragment"> jobbe med matematisk modellering</li>
+
+<p><li class="fragment"> arbeide tverrfaglig</li>
+</ul>
+<p><li class="fragment"> Sette s&#248;kelys p&#229; hvilke kunnskaper elevene trenger for &#229; arbeide med matematisk modellering i ulike realfag</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec12">Holder det ikke med de digitale ferdighetene slik vi kjenner dem fra grunnleggende ferdigheter i l&#230;replanen? </h3>
+
+<ul>
+<p><li class="fragment"> Digitale ferdigheter er en altfor generell betegnelse for &#229; dekke behovet av spesifikk programmeringskompetanse</li>
+<p><li class="fragment"> Det handler om mye mer enn &#229; bare ta digital teknologi i bruk</li>
+<p><li class="fragment"> Eleven vil forst&#229; mer av den digitale teknologien hvis hen har utviklet den selv</li>
+<p><li class="fragment"> I tilegg gir programmering eleven kunnskaper om probleml&#248;sning, jmf oppgavel&#248;sning/fors&#248;k i andre realfag</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec13">Programmering og IT er et lite fag i norsk skole og risikerer &#229; fortsett v&#230;re det. Men det finnes lyspunkter! </h3>
+
+<p>
+<center><p><img src="fig/computing_our_future.png" align="bottom" width=750></p></center>
+
+<ul>
+<p><li> Helt nytt (1.2.16) fors&#248;k med valgvalg i programmering i <a href="http://www.udir.no/Lareplaner/Forsok-og-pagaende-arbeid/forsok-med-programmering-som-valgfag" target="_blank">grunnskolen</a></li>
+<p><li> <a href="http://kidsakoder.no" target="_blank">L&#230;r kidsa kode</a></li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec14">Ludvigsen-utvalget understreker viktigheten av digital kompetanse men sier ikke noe spesifikt om IT eller programmering som eget fag (forel&#248;pig) </h3>
+
+
+<table border="0">
+<tr>
+<td class="padding">
+<ul>
+<p><li> "Matematikk, statistikk og informatikk vil bli mer og mer fremtredende innenfor klassiske naturvitenskapelige disipliner som biologi, fysikk, kjemi og geofag." (s 54)</li>
+
+<ul>
+ <p><li> Men det f&#248;lges ikke opp med mer spesifikke tanker om informatikk. Derimot om matematikk.</li>
+</ul>
+<p><li> Ordene kode/koding programmere/programmering finnes ikke noen steder i utredningen.</li>
+</ul>
+<p>
+</td>
+<td class="padding">
+<center><p><img src="fig/ludvigsen.png" align="bottom" width=550></p></center>
+</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+
+<h3 id="___sec15">Vi har et programmeringsfag i skolen idag, IT2, men det er mer rettet mot multimedia enn mot de andre realfagene og lar seg ikke lett kombineres med matematisk modellering. </h3>
+
+<ul>
+<p><li> Disse eksemplene er meget l&#230;replans-relevante (EKSAMENS?!) for IT2 men de har kanskje ikke allverdens med realfag &#229; gj&#248;re?</li>
+
+<ul>
+ <p><li> <a href="kode/fugler.html" target="_blank">Fuglequiz</a></li>
+ <p><li> <a href="kode/oppgaver_animasjon_9.html" target="_blank">Rudolf</a></li>
+</ul>
+<p>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec16">Hvordan kan matematisk modellering og programmering integrerers i dagens realfag? </h3>
+
+<ul>
+<p><li> Vi bruker allerede matematisk modellering i mange fag!</li>
+
+<ul>
+ <p><li> Men vi tilbyr oftest bare analytiske l&#248;sninger</li>
+</ul>
+<p>
+</ul>
+<ul>
+<p><li class="fragment"> Bevegelseslikningene for konstant aksellerasjon i fysikk: \( v(t)= v_0 + a\,t;\; s = v_0\,t + a\,t^2/2 \)</li>
+<p><li class="fragment"> S-kurven for biologiske bestand: \( Y(t)= \frac{M}{1-e^{-rt}} \)</li>
+<p><li class="fragment"> Kjemisk likevekt: \( \mathrm{K_p=\frac{[NH_3]^2}{[N_2]\cdot[H_2]^3}} \)</li>
+<p><li class="fragment"> Disse funksjonene og likevektsl&#248;sningen er spesialtilfeller av l&#248;sninger p&#229; differensiallikninger som kommer fra matematisk modellering</li>
+<p><li class="fragment"> Hvis de skal l&#248;ses analytisk m&#229; forholdene v&#230;re enkle.</li>
+<p><li class="fragment"> Forholdsvis enkle numeriske skjema kan brukes for &#229; l&#248;se de opprinnelige likningene og i tillegg gj&#248;re dem mer relevante</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec17">L&#248;sninger man f&#229;r fra numeriske skjema skiller seg fra analytiske funksjoner gjennom at vi bare kjenner l&#248;sningen p&#229; diskrete punkter i tid (og rom) </h3>
+
+<p>
+
+<table border="0">
+<tr>
+<td class="padding">
+<ul>
+<p><li> Hvis \( \hat{t} \) er en liste (vektor) med tidspunkter</li>
 </ul>
 <p>&nbsp;<br>
 $$
-\hat{t}=[0, 0.1, \ldots, 1.0]
+\hat{t}=[0, 0.2, \ldots, 1.0]
 $$
 <p>&nbsp;<br>
 
@@ -185,7 +465,7 @@ $$
 
 <section>
 
-<h3 id="___sec1">Differensiallikninger finner vi i alle realfagene og disse kan l&#248;ses med enkle numeriske skjema </h3>
+<h3 id="___sec18">Differensiallikninger finner vi i alle realfag og de kan l&#248;ses med numeriske skjema som kan implementeres i et program </h3>
 
 <ul>
 <p><li> Hovedid&#233;en er at vi gjennom differensiallikningen vet hvor mye en funksjon endrer seg n&#229;r tiden endrer seg litt.</li>
@@ -194,8 +474,9 @@ $$
 <p><li class="fragment"> Hvis \( df(t) \) er en funksjon som gir den deriverte av \( y \), \( \frac{dy}{dt} \), ved tiden \( t \) kan vi skrive:</li>
 <p><li class="fragment"> \( \frac{dy}{dt}=df(t)\simeq \frac{\Delta y}{\Delta t}=> \)</li>
 <p><li class="fragment"> \( \Delta y = df(t) \Delta t \). Her er en liten forandring i \( y \), \( \Delta y \) gitt ved en liten forandring i \( t \), \( \Delta t \).</li>
-<p><li class="fragment"> Hvis vi n&#229; har en liste med \( N+1 \) tidspunkter \( t=[t_0, t_1, \ldots, t_N] \) hvor hver tidspunkt gis fra den forrige som: \( t_{n+1}=t_n+\Delta t \)</li>
-<p><li class="fragment"> kan vi formulere det neste funksjonsverdien, \( y_{n+1} \) fra det forrige, \( y_{n} \) gjennom: \( y_{n+1}=y_n+\Delta y_n=y_n+df(t_n) \Delta t \)</li>
+<p><li class="fragment"> Hvis vi n&#229; har en liste med \( N+1 \) tidspunkter \( t=[t_0, t_1, \ldots, t_N] \) hvor hvert tidspunkt gis fra det forrige som: \( t_{n+1}=t_n+\Delta t \)</li>
+<p><li class="fragment"> kan vi formulere den neste funksjonsverdien, \( y_{n+1} \) fra det forrige, \( y_{n} \) gjennom: \( y_{n+1}=y_n+\Delta y_n=y_n+df(t_n) \Delta t \)</li>
+<p><li class="fragment"> Ofte er den deriverte avhengig av funksjonsverdien: \( y_n=y_n+df(t_n, y_n) \)</li>
 <p><li class="fragment"> Vi har et numerisk skjema!</li>
 </ul>
 </section>
@@ -203,7 +484,7 @@ $$
 
 <section>
 
-<h3 id="___sec2">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec19">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_0.svg" align="bottom" width=700></p></center>
@@ -216,7 +497,7 @@ $$
 
 <section>
 
-<h3 id="___sec3">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec20">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_1.svg" align="bottom" width=700></p></center>
@@ -229,7 +510,7 @@ $$
 
 <section>
 
-<h3 id="___sec4">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec21">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_3.svg" align="bottom" width=700></p></center>
@@ -242,13 +523,32 @@ $$
 
 <section>
 
-<h3 id="___sec5">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
+<h3 id="___sec22">Visualisering av det numeriske skjemaet med \( y_n \), \( \Delta y_n \) </h3>
 
 <p>
 <center><p><img src="fig/diskret_funksjon_5.svg" align="bottom" width=700></p></center>
 
 <ul>
-<p><li> Og vi kan fortsette med neste verdi$y_4$. Og s&#229; g&#229;r n&#229; dagene...</li>
+<p><li> Og vi kan fortsette med neste verdi \( y_4 \). Og s&#229;nn g&#229;r n&#229; dagene...</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec23">Er dette for vanskelig? Differensiallikninger tilh&#248;rer pensum i R2 og kan v&#230;re litt mye for elever i andre realfag? </h3>
+
+<ul>
+<p><li> Implementeringen av skjemaet krever ogs&#229; en del programmering.</li>
+</ul>
+<ul>
+<p><li class="fragment"> Kan l&#248;sningen v&#230;re et nytt MX-liknende fag, som kombinerer programmering med matematisk modellering?</li>
+<p><li class="fragment"> To lektorer, Andreas Haraldsrud og Per Husum p&#229; Valler videreg&#229;ende skole i Sandvika mener dette!</li>
+<p><li class="fragment"> De har fors&#248;kt &#229; f&#229; godkjent et eget 3h programfag i studiespesialiserende utdanningsprogram</li>
+<p><li class="fragment"> De tenker at man kan ta dette faget samtidig som R2 og en av Fysikk 2, Biologi2, Kjemi2, eller Geofag 2.</li>
+<p><li class="fragment"> ... men de har f&#229;tt avslag for h&#248;st 2016.</li>
+<p><li class="fragment"> Jeg h&#229;per at dette er en retning informatikkfaget kan g&#229; mot og at det f&#229;r gjennomslag for neste studie&#229;r og at Ludvigsen-utvalget f&#229;r h&#248;rt om det n&#229;r de skal se p&#229; de ulike fagplanene.</li>
+<p><li class="fragment"> Hva tenker dere?</li>
 </ul>
 </section>
 
