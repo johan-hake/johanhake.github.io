@@ -18,6 +18,15 @@ DATE: 29. mars 2016
 
 !split
 
+======= Først-sak-først: Takk! =======
+* Hilde Bjørndalen for å invitere meg hit
+* Prof. Andrew McCulloch som veiledet meg under PostDoc oppeholdet i San Diego
+* Prof. Hans Petter Langtangen som har vært visjonær mht matematisk modellering og som har fått Olavs Thons formiddlingspris for 2016
+* Tidligere kollegaer på Simula Research Laboratory
+* Jonas Van den Brink som har utviklet Python koden for strikkhoppet vi seinere skal se på
+
+!split
+
 ======= Hjerte ABC: Hvert hjerteslag startes og synkroniseres av et elektrisk signal =======
 
 FIGURE: [fig/heart_scetch.svg, width=500]
@@ -272,14 +281,6 @@ Vi skal prøve å bruke Jupyter-notebook som skal kjøre Python skriptet i nettl
 * Gå til "https://try.jupyter.org" : "https://try.jupyter.org"
 * Gå til Files og velg "open" og så last opp (upload)
 * Last opp din fil "index.ipynb" og åpne den
-
-!split
-
-======= Takk! =======
-* Hilde Bjørndalen for å invitere meg hit
-* Prof. Andrew McCulloch som veiledet meg under PostDoc oppeholdet i San Diego
-* Prof. Hans Petter Langtangen som har vært visjonær mht matematisk modellering og som har fått Olavs Thons formiddlingspris for 2016
-* Jonas Van den Brink som har utviklet Python koden for strikkhoppet
 
 ### ======= Programmering i grundskolen =======
 ### 
