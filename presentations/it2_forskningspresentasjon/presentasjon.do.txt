@@ -1,7 +1,7 @@
 TITLE: Spennende kombinasjoner av informatikk og andre realfag
 AUTHOR: - hvorfor og hvordan kan programmering kombineres med de andre realfagene
 # AUTHOR: Johan Hake IT og Fysikk-lærer på Oslo katedralskole
-DATE: 29. mars 2016
+DATE: 2. juni 2016
 
 
 !split
