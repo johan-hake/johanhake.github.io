@@ -11,7 +11,7 @@ DATE: 1. juni 2016
 === Oversikt ===
 
 * Verdi bak motivasjonen
-* Min praksis teori
+* Min praksisteori
   * Før jeg startet PPU
   * Første praksisperiode Elvebakken
   * Andre praksisperiode Ski videregående
@@ -20,28 +20,28 @@ DATE: 1. juni 2016
 
 !split
 
-===== Mestring er en verdi som har drevet min profesjonelle motivasjon =====
+===== Mestring er en verdi som har vært og er sentral for min motivasjon =====
 *Opplæringens mål er å ruste barn, unge og voksne til å møte livets oppgaver og mestre utfordringer sammen med andre. Den skal gi hver elev kyndighet til å ta hånd om seg selv og sitt liv, og samtidig overskudd og vilje til å stå andre bi.* Generell del av læreplanen, LK06 (1993)
 
 FIGURE: [fig/keep-calm-and-say-yes-i-can-50.png, width=400]
 
 !split
 
-===== Mestring er en verdi som driver min profesjonelle motivasjon color{red}{sammen med andre!} =====
-*Opplæringens mål er å ruste barn, unge og voksne til å møte livets oppgaver og mestre utfordringer color{red}{sammen med andre.} Den skal gi hver elev kyndighet til å ta hånd om seg selv og sitt liv, color{red}{og samtidig overskudd og vilje til å stå andre bi.}* Generell del av læreplanen, LK06 (1993)
+### ===== Mestring er en verdi som driver min profesjonelle motivasjon color{red}{sammen med andre!} =====
+### *Opplæringens mål er å ruste barn, unge og voksne til å møte livets oppgaver og mestre utfordringer color{red}{sammen med andre.} Den skal gi hver elev kyndighet til å ta hånd om seg selv og sitt liv, color{red}{og samtidig overskudd og vilje til å stå andre bi.}* Generell del av læreplanen, LK06 (1993)
+### 
+### FIGURE: [fig/keep-calm-and-say-yes-i-can-50-together.png, width=400]
+### 
+### !split
 
-FIGURE: [fig/keep-calm-and-say-yes-i-can-50-together.png, width=400]
-
-!split
-
-===== Jeg skal her gjøre rede for min *praksisteori* slik den har utviklet seg gjennom PPU studiet =====
+===== Jeg skal her gjøre rede for min *praksisteori* slik den har utviklet seg gjennom PPU-studiet =====
 *Praksisteori er "en persons private, sammenvevde, men stadig foranderlige system av kunnskap, erfaring og verdier som til enhver tid har betydning for personens undervisningspraksis"* (Lauvås og Handal 1999 s.14)
 
 FIGURE: [fig/Development-bilde2.jpg, width=950]
 
 !split
 
-===== Praksisteorin før jeg startet PPU var preget av min oppvekst som barn av to lærere og fra min bakgrunn i akademia =====
+===== Praksisteorien før jeg startet PPU var preget av min oppvekst som barn av to lærere og fra min bakgrunn i akademia =====
 
 !bslidecell 00
 FIGURE: [fig/Family-Holding-Hands-Silhouette.png, width=450]
@@ -54,12 +54,12 @@ FIGURE: [fig/professeur.png, width=450]
 
 !split
 
-===== Før praksis og PPU sammenføll mitt syn på hva læring er til stor del med Piagets kognitiva skjema =====
+===== Før praksis og PPU var mitt syn på hva læring er stort sett sammenfallende med Piagets kognitive skjema =====
 
 FIGURE: [fig/piaget_skjema_00.svg, width=850]
 
-* Man opplever den utanforstående verden basert på forutintattet kunskaper: *indre skjeman*
-* Objekter med større tyngd faller til jorden med større fart enn lettere objekter 1-2-5
+* Man opplever den utenforstående verden basert på forutintatte kunskaper: *indre skjema*
+* Objekter med større masse faller til jorden med større fart enn lettere objekter 1-2-5
 
 !split
 
@@ -70,44 +70,37 @@ FIGURE: [fig/piaget_skjema_00.svg, width=850]
 ### * Interestant med skjema vs språklig viktighet?
 ### 
 
-===== Ny kunnskap assmileres til eksisterende skjeman hvis de ikke bryter mot de ekisterende skjemane =====
+===== Ny kunnskap assmileres til eksisterende skjema hvis de ikke bryter mot de ekisterende skjemaene =====
 FIGURE: [fig/piaget_skjema_0.svg, width=850]
 
-* Man opplever den utanforstående verden basert på forutintattet kunskaper: *kognitive skjeman*
-* Objekter med større tyngd faller til jorden med større fart enn lettere objekter
-* Et løv vil derfor falle saktere mot marken en en 10 kg tyngde
+* Man opplever den utenforstående verden basert på forutintatte kunskaper: *kognitive skjema*
+* Objekter med større masse faller til jorden med større fart enn lettere objekter
+* En fjær vil derfor falle saktere mot marken enn en bowlingkule
 !split
 
-===== Ny kunnskap assmileres til eksisterende skjeman hvis de ikke bryter mot de ekisterende skjemane =====
-FIGURE: [fig/piaget_skjema_1.svg, width=850]
-
-* Man opplever den utanforstående verden basert på forutintattet kunskaper: *indre skjeman*
-* Objekter med større tyngd faller til jorden med større fart enn lettere objekter
-* Et løv vil derfor falle saktere mot marken en en 10 kg tyngde
-* Og en fjær vill falle saktere enn en bowlingkule
-
-!split
+### ===== Ny kunnskap assmileres til eksisterende skjema hvis de ikke bryter mot de ekisterende skjemaene =====
+### FIGURE: [fig/piaget_skjema_1.svg, width=850]
+### 
+### * Man opplever den utenforstående verden basert på forutintatte kunskaper: *indre skjema*
+### * Objekter med større tyngd faller til jorden med større fart enn lettere objekter
+### * Et løv vil derfor falle saktere mot marken en en 10 kg tyngde
+### * Og en fjær vil falle saktere enn en bowlingkule
+### 
+### !split
 
 ===== Hvis vi pumper ut luften fremprovoserer vi en kognitiv ubalanse =====
 FIGURE: [fig/piaget_skjema_2.svg, width=850]
-* Fjæren faller like fort som bowling kulen!
+* Fjæren faller like fort som bowlingkulen!
 
 !split
 
-===== Ubalansen rettes opp gjennom å utvidge skjemaet =====
+===== Ubalansen rettes opp gjennom å utvide skjemaet =====
 FIGURE: [fig/piaget_skjema_3.svg, width=850]
 * Objekter som bare påvirkes av tyngdekraften faller like fort!
 
 !split
 
-===== På min første praksis på elevebakken var temat Energi og mitt fokus var å skape ubalanse i de kognitive skjema =====
-
-### * bilde (assimilasjon, akomodasjon,)
-### * eleven MÅ skape sin egen versjon av kunnskapen og alle sanseintrykk er silt med ens forutintattet kunskaper
-### * Overføring av begreper
-### * Ubalanse/kognitiv konflikt
-### * Ikke nødvendigvis den pedagogiske aspektene ved Piagets lære (aktivitetslæring!)
-### * Interestant med skjema vs språklig viktighet?
+===== På min første praksis på Elvebakken var temaet *Energi* og mitt fokus var å skape ubalanse i de kognitive skjemaene =====
 
 !bslidecell 00 
 FIGURE: [fig/jonata-batteries.svg, width=300]
@@ -124,7 +117,7 @@ E_k &= \frac{m v^2}{2}
 !eslidecell
 
 * Det gamle skjemaet om energi var elevenes forkunskaper om temaet 
-* Den kognitive ubalansen skapades gjennom å vise på forskjellen mellom *kvalitative* og *kvantitative* relasjoner for energi
+* Den kognitive ubalansen ble skapt gjennom å vise forskjellen mellom *kvalitative* og *kvantitative* relasjoner for energi
 
 !split
 
@@ -136,39 +129,39 @@ E_k &= \frac{m v^2}{2}
 ### 
 ### !split
 ### 
-======= Jeg fikk gode respons fra elevene men... =======
+======= Jeg fikk god respons fra elevene men... =======
 
 FIGURE: [fig/professeur.png, width=300]
 
-* Enlig praksislærene mine brukte jeg _allt_ for mye tid på lærerstyrd forelesning
-* Jeg fikk klar besked om at elevene må ha mer tid med egen regning og samsnakking
+* ifølge praksislærene mine brukte jeg _alt_ for mye tid på lærerstyrt forelesninger
+* Jeg fikk klar besked om at elevene må ha mer tid til egen regning og samsnakking
 
 !split
 
-===== Jeg brukte samarbeidslæring som en del av min andre praksis på Ski for temat: *føring av selvangivelse* i 1P =====
+===== Jeg brukte samarbeidslæring som en del av min andre praksis på Ski for temaet: *føring av selvangivelse* i 1P =====
 
-FIGURE: [fig/opplegg.svg, width=700]
+FIGURE: [fig/opplegg.svg, width=600]
 
 * Vi lagde opplegget basert på utforskende arbeidsmåter
 
 !split
 
-===== Sosialinteraksjon mellom elevene hjelpte de å lære seg komplekse sammenhenger med mange nye begreper =====
+===== Sosial interaksjon mellom elevene hjalp dem å lære seg komplekse sammenhenger med mange nye begreper =====
 
 FIGURE: [fig/students_group_work.svg, width=500]
 
-* Den utforskende arbeidsmåten læt elevene *oppdage* begreppene selve
-* Gjennom å ta utgangspunkt i hverandres forståelse av selvangivelse mener jeg at de klarte å lære seg mer enn om jeg som lærer hadde fortalt de om de ulike begrepene
+* Den utforskende arbeidsmåten lot elevene *oppdage* begrepene selv
+* Gjennom å ta utgangspunkt i hverandres forståelse av selvangivelse mener jeg at de klarte å lære seg mer enn om jeg som lærer hadde fortalt dem om de ulike begrepene
 
 !split
 
-===== "Hva et barn kan gjøre med samarbeid idag kan den gjøre selv imorgen" Vygotski 1934 =====
+===== "Hva et barn kan gjøre med hjelp idag kan det gjøre selv imorgen" Vygotski (1934) =====
 
 FIGURE: [fig/utviklingssoner.svg, width=400]
 
-* Hvor Piaget såg på læring som et resultat av den enkeltes utforskning mente Vygotski at læring starter med en sosial aktivitet
-* Læring skjer når en som kan mer strekker seg mot den som skal lære
+* Der Piaget så på læring som et resultat av den enkeltes utforskning mente Vygotski at læring starter med en sosial aktivitet
 * All læring er en del av kulturen og den tar bolig i oss gjennom språket
+* Læring skjer når en som kan mer strekker seg mot den som skal lære
 
 !split
 
@@ -176,7 +169,7 @@ FIGURE: [fig/utviklingssoner.svg, width=400]
 
 !bslidecell 00
 * Tankene er et indre språk
-* Og det man formidler til andre er et yttre språk
+* Og det man formidler til andre er et ytre språk
 !eslidecell
 
 !bslidecell 01
@@ -186,33 +179,49 @@ FIGURE: [fig/tanker.svg, width=500]
 
 !split
 
-===== Den siste praksisen var fokuset på å hjelpe minoritetsspråkelige elever med leseveiledning i realfag =====
+===== I den siste praksisen var fokuset på å hjelpe minoritetsspråkelige elever med leseveiledning i realfag =====
 
-!bslidecell 00 0.5
+!bslidecell 00 0.25
 * Begreper i realfag spiller en sentral rolle for forståelse (Energi, kraft)
-* I følge Vygotski formidles disse begrepene fra kulturen til den lærende gjennom språket
 * Minoritetsspråkelige elever har en ekstra utfordring da undervisning og literatur er på et språk som er deres 2e språk
+* Blandt annet er de realfagsbegreper vanskelige å forstå (Alver 2009)
+## * I følge Vygotski formidles disse begrepene fra kulturen til den lærende gjennom språket
 !eslidecell
 
-!bslidecell 01 0.5
+!bslidecell 01 0.75
 FIGURE: [fig/reading.svg, width=500]
 
 !eslidecell
 !split
 
-===== Jeg brukte to ulike leseveiledningsmetoder *to-kolonnenotat* og *prosessnotat* men fikk dessverre for lite tid til å gjennomføre det ordentlig =====
+===== Jeg brukte to ulike leseveiledningsmetoder *to-kolonnenotat* og *prosessnotat* =====
 
 !bslidecell 00 0.5
 _to-kolonnenotat_<linebreak>
 
-FIGURE: [fig/tokolonnenotat.svg, width=500]
+FIGURE: [fig/tokolonnenotat.svg, width=400]
 
 !eslidecell
 
 !bslidecell 01 0.5
-_prosess notat_<linebreak>
-Jada bada
-snada bsa
+_prosessnotat_<linebreak>
+
+FIGURE: [fig/prosessnotat.svg, width=400]
+!eslidecell
+* Jeg fikk desverre bare utført disse en gang hver
+
+!split
+
+===== Gjennom PPU med lærerpraksisen og mitt første år som lærer har jeg lagt et pedagogisk grunnlag for en fortsatt lærergjerning =====
+
+!bslidecell 00 0.6
+* Jeg har vist at jeg har solide perspektiver på danning, utdanning, utvikling og læring, demokrati og likeverd
+* Jeg har vist at jeg kan bygge relasjoner, kommunisere og samarbeide med elever, kolleger, foresatte, øvrige samarbeidsinstanser for skoleverket
+* Jeg har vist kan reise problemstillinger, undersøke og drøfte disse kritisk i faglig fellesskap
+!eslidecell
+
+!bslidecell 01 0.4
+FIGURE: [fig/keep-calm-and-say-yes-i-can-50-together.png, width=400 frac=0.4]
 
 !eslidecell
 
