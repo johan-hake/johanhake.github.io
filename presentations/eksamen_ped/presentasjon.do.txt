@@ -10,7 +10,7 @@ DATE: 1. juni 2016
 
 === Oversikt ===
 
-* Verdi bak motivasjonen
+* Motivasjonen for lærerstudiet
 * Min praksisteori
   * Før jeg startet PPU
   * Første praksisperiode Elvebakken
@@ -20,7 +20,7 @@ DATE: 1. juni 2016
 
 !split
 
-===== Mestring er en verdi som har vært og er sentral for min motivasjon =====
+===== Mestring og formidling av mestring har vært og er sentral for min motivasjon for å bli lærer =====
 *Opplæringens mål er å ruste barn, unge og voksne til å møte livets oppgaver og mestre utfordringer sammen med andre. Den skal gi hver elev kyndighet til å ta hånd om seg selv og sitt liv, og samtidig overskudd og vilje til å stå andre bi.* Generell del av læreplanen, LK06 (1993)
 
 FIGURE: [fig/keep-calm-and-say-yes-i-can-50.png, width=400]
@@ -41,7 +41,7 @@ FIGURE: [fig/Development-bilde2.jpg, width=950]
 
 !split
 
-===== Praksisteorien før jeg startet PPU var preget av min oppvekst som barn av to lærere og fra min bakgrunn i akademia =====
+===== Min praksisteori før jeg startet PPU var preget av min oppvekst som barn av to lærere og fra min bakgrunn i akademia =====
 
 !bslidecell 00
 FIGURE: [fig/Family-Holding-Hands-Silhouette.png, width=450]
@@ -75,7 +75,7 @@ FIGURE: [fig/piaget_skjema_0.svg, width=850]
 
 * Man opplever den utenforstående verden basert på forutintatte kunskaper: *kognitive skjema*
 * Objekter med større masse faller til jorden med større fart enn lettere objekter
-* En fjær vil derfor falle saktere mot marken enn en bowlingkule
+* En bowling kule vil derfor falle fortere mot marken enn en fjær
 !split
 
 ### ===== Ny kunnskap assmileres til eksisterende skjema hvis de ikke bryter mot de ekisterende skjemaene =====
@@ -94,7 +94,7 @@ FIGURE: [fig/piaget_skjema_2.svg, width=850]
 
 !split
 
-===== Ubalansen rettes opp gjennom å utvide skjemaet =====
+===== Ubalansen rettes opp gjennom å utvide skjemaet gjennom akkomodasjon =====
 FIGURE: [fig/piaget_skjema_3.svg, width=850]
 * Objekter som bare påvirkes av tyngdekraften faller like fort!
 
@@ -155,21 +155,20 @@ FIGURE: [fig/students_group_work.svg, width=500]
 
 !split
 
-===== "Hva et barn kan gjøre med hjelp idag kan det gjøre selv imorgen" Vygotski (1934) =====
+===== Der Piaget så på læring som et resultat av den enkeltes utforskning mente den russiske pedagogen Lev Vygotski at læring starter med en sosial aktivitet =====
 
 FIGURE: [fig/utviklingssoner.svg, width=400]
 
-* Der Piaget så på læring som et resultat av den enkeltes utforskning mente Vygotski at læring starter med en sosial aktivitet
-* All læring er en del av kulturen og den tar bolig i oss gjennom språket
-* Læring skjer når en som kan mer strekker seg mot den som skal lære
+* All læring er en del av kulturen og den tar bolig i oss gjennom sosial aktivitet og ikke minst gjennom språket
+* Læring skjer når en som kan mer strekker seg mot den som skal lære og skaper den proksimale utviklingssonen
 
 !split
 
-===== Vygotski sier ikke at den abstrakte lærdommen eller tankene er språklige strukturer men at den formidles gjennom språk =====
+===== Språket står sentralt i Vygotskis teorier. Språket er ikke den abstrakte lærdommen eller selve tankene men den formidles gjennom språket (*et indre og et ytre*). =====
 
 !bslidecell 00
-* Tankene er et indre språk
-* Og det man formidler til andre er et ytre språk
+* Det indre språket fungere som formidler mellom tankene og det abstrakte begrepene
+* Det ytre språket brukes i komunikasjon med andre
 !eslidecell
 
 !bslidecell 01
@@ -179,12 +178,12 @@ FIGURE: [fig/tanker.svg, width=500]
 
 !split
 
-===== I den siste praksisen var fokuset på å hjelpe minoritetsspråkelige elever med leseveiledning i realfag =====
+===== I den tredje praksisen på Katta fortsatte jeg fokuset på språk gjennom å prøve å hjelpe minoritetsspråkelige elever med leseveiledning i realfag =====
 
 !bslidecell 00 0.25
 * Begreper i realfag spiller en sentral rolle for forståelse (Energi, kraft)
 * Minoritetsspråkelige elever har en ekstra utfordring da undervisning og literatur er på et språk som er deres 2e språk
-* Blandt annet er de realfagsbegreper vanskelige å forstå (Alver 2009)
+* Det viser seg at realfagsbegreper er vanskelige å forstå for minoritetsspråkelige elever (Alver 2009)
 ## * I følge Vygotski formidles disse begrepene fra kulturen til den lærende gjennom språket
 !eslidecell
 
@@ -212,7 +211,7 @@ FIGURE: [fig/prosessnotat.svg, width=400]
 
 !split
 
-===== Gjennom PPU med lærerpraksisen og mitt første år som lærer har jeg lagt et grunnlag for en fortsatt lærergjerning hvor formidling av mestring forsatt vill stå sentralt =====
+===== Gjennom PPU og mitt første år som lærer har jeg lagt et grunnlag for en fortsatt lærergjerning hvor formidling av mestring forsatt vill stå sentralt =====
 
 !bslidecell 00 0.6
 * Jeg har vist at jeg har solide perspektiver på danning, utdanning, utvikling og læring, demokrati og likeverd
