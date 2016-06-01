@@ -142,7 +142,7 @@ FIGURE: [fig/professeur.png, width=300]
 
 FIGURE: [fig/opplegg.svg, width=600]
 
-* Vi lagde opplegget basert på utforskende arbeidsmåter
+* Vi lagde opplegget basert på utforskende arbeidsmåter (Knain og Kolstø 2011)
 
 !split
 
