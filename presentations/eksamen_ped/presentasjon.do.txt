@@ -16,7 +16,7 @@ DATE: 1. juni 2016
   * Første praksisperiode Elvebakken
   * Andre praksisperiode Ski videregående
   * Tredje praksisperiode Oslo katedralskole
-* Fremtidige perspektiv for meg som lærer
+#* Fremtidige perspektiv for meg som lærer
 
 !split
 
@@ -165,7 +165,7 @@ FIGURE: [fig/utviklingssoner.svg, width=400]
 
 !split
 
-===== Vygotski tenker ikke at den abstrakte lærdommen er språklige strukturer men at den formidles gjennom språk =====
+===== Vygotski sier ikke at den abstrakte lærdommen eller tankene er språklige strukturer men at den formidles gjennom språk =====
 
 !bslidecell 00
 * Tankene er et indre språk
@@ -212,7 +212,7 @@ FIGURE: [fig/prosessnotat.svg, width=400]
 
 !split
 
-===== Gjennom PPU med lærerpraksisen og mitt første år som lærer har jeg lagt et pedagogisk grunnlag for en fortsatt lærergjerning =====
+===== Gjennom PPU med lærerpraksisen og mitt første år som lærer har jeg lagt et grunnlag for en fortsatt lærergjerning hvor formidling av mestring forsatt vill stå sentralt =====
 
 !bslidecell 00 0.6
 * Jeg har vist at jeg har solide perspektiver på danning, utdanning, utvikling og læring, demokrati og likeverd
