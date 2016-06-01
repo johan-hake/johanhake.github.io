@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Fugler 2</title>
+    <style type="text/css">
+h1 {
+   text-align: center;
+   font-size: 40pt;
+}
+#beskjed {
+   text-align: center;
+   font-size: 30pt;
+}
+body {
+    width: 1000px;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+button {
+    display: inline-block;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20pt;
+}
+#avslutt {
+    background-color: #FF6600;
+}
+#bildeDiv{
+    text-align: center;
+}
+    </style>
+    <script type="text/javascript" src="fugleInfo.js"></script>
+</head>
+<body>
+<div id="info">
+    <h1>Fuglequiz!</h1>
+    <!-- <h3>Gjett fuglen</h3> -->
+    <div id="bildeDiv">
+        <img src="" id="fugleBilde" height="400">
+    </div>
+    <div id="valg"></div>
+    <button onclick="avslutt()" id="avslutt">Avslutt</button>
+    <p id="beskjed"></p>
+    <audio id="lyd"></audio>
+    
+</div>
+    <script type="text/javascript">
+
+    // Globale variabler
+    var rettFugl = "";
+    var antallFeil = 0;
+    var antallRett = 0;
+
+    // Dom
+    var bildeEl = document.getElementById("fugleBilde");
+    var inputDiv = document.getElementById("input");
+    var valgDivEl = document.getElementById("valg");
+    var beskjedEl = document.getElementById("beskjed");
+    var infoEl = document.getElementById("info");
+    var lydEl = document.getElementById("lyd");
+
+    // Legger til en knapp for hver fugl som skal vise all info
+    for (var i=0; i<fugler.length; i++) {
+
+        // Henter ut informasjonen til hver av fuglene
+        var fugleNavn = fugler[i].navn;
+
+        // Lager en knapp og legger til den til info diven
+        var knappEl = document.createElement("button");
+        knappEl.innerHTML = fugleNavn;
+        valgDivEl.appendChild(knappEl);
+
+        // Binder hendelsen i knappen med fugle navnet
+        bindKnappHendelse(knappEl, fugleNavn);
+    }
+
+    // Lager en ny fugl!
+    nyFugl();
+
+    // Velger en ny fugle og sjekker at det ikke blir den samme fuglen
+    function velgNyFugl(){
+
+        // Tilfeldig valgt fugl
+        var fugleIndex = Math.floor(Math.random()*fugler.length);
+
+        // Samme som nå er valgt?
+        if (rettFugl == fugler[fugleIndex].navn) {
+
+            // Da velger vi en ny fugl
+            return velgNyFugl();
+        }
+
+        // Hvis ikke den samme returnerer vi indeksen
+        return fugleIndex;
+    }
+
+    // Funksjon for å velge ny fugl
+    function nyFugl(){
+
+        // Velger en tilfeldig fugl
+        var fugleIndex =  velgNyFugl();
+        bildeEl.src = fugler[fugleIndex].bilde;
+        lydEl.src = fugler[fugleIndex].lyd;
+        lydEl.load();
+        lydEl.loop = true;
+        lydEl.play();
+                                   
+        rettFugl = fugler[fugleIndex].navn;
+    }
+
+    // Binder en hendelse til en fugle knapp
+    function bindKnappHendelse(knappEl, fugleNavn){
+
+        knappEl.onclick = function (){
+            // Sjekker den globale rett fugl variablen
+            if (rettFugl == fugleNavn) {
+                antallRett += 1;
+                beskjedEl.innerHTML = fugleNavn + " var rett!";
+            } else {
+                antallFeil += 1;
+                beskjedEl.innerHTML = fugleNavn + " var feil, rett svar var: " + rettFugl;
+            }
+
+            // Velger ny fugl!
+            console.log(fugleNavn, antallRett, antallFeil)
+            nyFugl();
+        }
+    }
+
+    // Avslutt hele quizen
+    function avslutt(){
+        infoEl.innerHTML = "<h1>Resultat!</h1>\n";
+        infoEl.innerHTML += "<p id='beskjed'>Antal rett og feil illustreres av vite og svarte fjær:</p>\n";
+        for (var i=0; i<antallRett; i++) {
+            infoEl.innerHTML += "<img src=bilder/hvit_fjar.jpg width=150px>\n";
+        }
+        infoEl.innerHTML += "<br>"
+        for (var i=0; i<antallFeil; i++) {
+            infoEl.innerHTML += "<img src=bilder/sort_fjar.jpg width=150px>\n";
+        }
+    }
+
+    </script>
+</body>
+</html

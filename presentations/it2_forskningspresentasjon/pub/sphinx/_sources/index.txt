@@ -1,0 +1,19 @@
+
+.. Master file automatically created by doconce sphinx_dir
+
+
+Kombinasjoner av informatikk og andre realfag
+=============================================
+
+Innhold:
+
+.. toctree::
+   :maxdepth: 2
+
+   presentasjon
+
+
+Index
+=====
+
+* :ref:`genindex`
