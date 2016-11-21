@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Animasjon Vinterdans</title>
+<style type="text/css">
+h1 {
+   font-size: 40pt;
+   color: white;
+   font-family: sans-serif;
+   text-align: center;
+}
+@keyframes hode {
+    0% {transform: translate(0px, 0px) rotate(0deg);}
+    25% {transform: translate(-1px, 1px) rotate(1deg);}
+    50% {transform: translate(1px, -1px) rotate(0deg);}
+    75% {transform: translate(0px, -1px) rotate(1deg);}
+    100% {transform: translate(0px, 0px) rotate(0deg);}
+}
+@keyframes kropp {
+    0% {transform: translate(0px, 0px) rotate(0deg);}
+    25% {transform: translate(2px, 2px) rotate(-2deg);}
+    50% {transform: translate(-2px, 2px) rotate(2deg);}
+    75% {transform: translate(-2px, -2px) rotate(-2deg);}
+    100% {transform: translate(0px, 0px) rotate(0deg);}
+}
+@keyframes fremogtilbake {
+    0% {transform: translateX(0px);}
+    25% {transform: translateX(100px);}
+    50% {transform: translateX(0px);}
+    75% {transform: translateX(-100px);}
+    100% {transform: translateX(0px);}
+
+}
+body {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: black;
+}
+
+#bakgrunn {
+    position: relative;
+    background-image: url("bilder/vinter.png");
+    border: 6px solid darkred;
+    overflow: hidden;
+    width: 1200px;
+    height: 784px;
+    transform: scale(0.8);
+}
+#reinsdyr {
+    position: absolute;
+    width: 1200px;
+    height: 784px;
+    animation-name: fremogtilbake;  
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#kropp {
+    position: absolute;
+    background-image: url("bilder/rein-kropp.png");
+    left: 240px;
+    bottom: 20px;
+    width: 674px;
+    height: 652px;
+    animation-name: kropp;  
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#hode {
+    position: absolute;
+    background-image: url("bilder/rein-hode.png");
+    left: 285px;
+    bottom: 358px;
+    width: 446px;
+    height: 430px;
+    animation-name: hode;  
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+</style>
+</head>
+<body>
+    
+<h1>Vinterdans, reindyr i solnedgang!</h1>
+
+<!-- <h3 id="tekst">Reindyr i solnedgang!</h3> -->
+<div id="bakgrunn">
+    <div id="reinsdyr">
+        <div id="kropp"></div>
+        <div id="hode"></div>
+    </div>
+</div>
+<audio id="rudolf" src="lyd/rudolf.mp3" autoplay></audio>
+<script type="text/javascript">
+    var rudolf = document.getElementById("rudolf");
+    rudolf.currentTime = 31;
+</script>
+</body>
+
+</html
+

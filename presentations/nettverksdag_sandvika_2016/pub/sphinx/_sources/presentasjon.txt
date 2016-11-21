@@ -1,0 +1,124 @@
+.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
+   (https://github.com/hplgit/doconce/)
+
+.. Document title:
+
+Kombinasjoner av informatikk og andre realfag
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+:Authors: Johan Hake IT og Fysikk-lærer på Oslo katedralskole
+:Date: 29. mars 2016
+
+.. !split
+
+Spennende kombinasjoner av informatikk og andre realfag
+=======================================================
+
+Oversikt
+~~~~~~~~
+
+* Informatikk i Læreplanen
+
+* Mattematisk modellering i de klassiske realfagene
+
+* Jada jada
+
+.. !split
+
+Headline          (1)
+=====================
+
+.. !split
+
+Next slide...
+=============
+
+.. !split
+
+DocOnce: example on slide code
+==============================
+
+Last page gets rendered to
+
+.. !split
+
+Headline          (2)
+=====================
+
+.. !bslidecell 00
+
+ * Key point 1
+
+ * Key point 2
+
+ * Key point 3 takes very much more text to explain because
+   this point is really comprehensive, and although long
+   bullet points are not recommended in general, we need
+   it here for demonstration purposes
+
+.. math::
+         -\nabla^2 u = f \quad\hbox{in }\Omega 
+
+.. !eslidecell
+
+.. !bslidecell 01
+
+.. figure:: broken_pen_and_paper.jpg
+   :width: 400
+
+.. !eslidecell
+
+.. !split
+
+.. _numerical:problem:
+
+Numerical solution method
+=========================
+
+.. index:: mesh in time
+
+.. index:: theta-rule
+
+.. index:: numerical scheme
+
+.. index:: finite difference scheme
+
+.. !bpop
+
+ * Mesh in time: :math:`0= t_0< t_1 \cdots < t_N=T`
+
+ * Assume constant :math:`\Delta t = t_{n}-t_{n-1}`
+
+ * :math:`u^n`: numerical approx to the exact solution at :math:`t_n`
+
+.. !epop
+
+.. !bpop
+
+Numerical scheme:
+
+.. math::
+         
+         u^{n+1} = \frac{1 - (1-\theta) a\Delta t}{1 + \theta a\Delta t}u^n,
+         \quad n=0,1,\ldots,N-1
+         
+
+.. !epop
+
+.. !bpop
+
+:math:`\theta=0`: Forward Euler, :math:`\theta=1`: Backward Euler,
+:math:`\theta=1/2`: Crank-Nicolson
+
+.. !epop
+
+Implementation: Python program is embedded in a web service, Python Online Tutor, which enables stepwise execution and examination of variables
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+.. raw:: html
+
+        <iframe width="950" height="500" frameborder="0"
+                src="http://pythontutor.com/iframe-embed.html#code=def+solver%28I%2C+a%2C+T%2C+dt%2C+theta%29%3A%0A++++dt+%3D+float%28dt%29%0A++++N+%3D+int%28round%28T%2Fdt%29%29%0A++++T+%3D+N%2Adt%0A++++u+%3D+%5B0.0%5D%2A%28N%2B1%29%0A++++t+%3D+%5Bi%2Adt+for+i+in+range%28N%2B1%29%5D%0A%0A++++u%5B0%5D+%3D+I%0A++++for+n+in+range%280%2C+N%29%3A%0A++++++++u%5Bn%2B1%5D+%3D+%281+-+%281-theta%29%2Aa%2Adt%29%2F%281+%2B+theta%2Adt%2Aa%29%2Au%5Bn%5D%0A++++return+u%2C+t%0A%0Au%2C+t+%3D+solver%28I%3D1%2C+a%3D1%2C+T%3D3%2C+dt%3D1.%2C+theta%3D0.5%29%0Aprint+u&curInstr=0&py=2&cumulative=false">
+        </iframe>
+
+

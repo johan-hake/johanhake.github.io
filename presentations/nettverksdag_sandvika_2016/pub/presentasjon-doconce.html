@@ -1,0 +1,83 @@
+<div class="highlight"><pre>TITLE: Kombinasjoner av informatikk og andre realfag
+AUTHOR: Johan Hake IT og Fysikk-lærer på Oslo katedralskole
+DATE: 29. mars 2016
+
+
+!split
+======= Spennende kombinasjoner av informatikk og andre realfag =======
+
+=== Oversikt ===
+
+* Informatikk i Læreplanen
+* Mattematisk modellering i de klassiske realfagene
+* Jada jada
+
+!split
+
+======= Headline =======
+
+
+!split
+======= Next slide... =======
+
+!split
+======= DocOnce: example on slide code =======
+
+Last page gets rendered to
+
+======= Headline =======
+
+!bslidecell 00
+ * Key point 1
+ * Key point 2
+ * Key point 3 takes very much more text to explain because
+   this point is really comprehensive, and although long
+   bullet points are not recommended in general, we need
+   it here for demonstration purposes
+
+!bt
+\[ -\nabla^2 u = f \quad\hbox{in }\Omega \]
+!et
+
+!eslidecell
+
+!bslidecell 01
+FIGURE: [fig/broken_pen_and_paper, width=400]
+!eslidecell
+
+
+!split
+======= Numerical solution method =======
+label{numerical:problem}
+
+idx{mesh in time} idx{$\theta$-rule} idx{numerical scheme}
+idx{finite difference scheme}
+
+!bpop
+ * Mesh in time: $0= t_0&lt; t_1 \cdots &lt; t_N=T$
+ * Assume constant $\Delta t = t_{n}-t_{n-1}$
+ * $u^n$: numerical approx to the exact solution at $t_n$
+!epop
+
+!bpop
+Numerical scheme:
+!bt
+ \[
+ u^{n+1} = \frac{1 - (1-\theta) a\Delta t}{1 + \theta a\Delta t}u^n,
+ \quad n=0,1,\ldots,N-1
+ \]
+!et
+!epop
+
+!bpop
+$\theta=0$: Forward Euler, $\theta=1$: Backward Euler,
+$\theta=1/2$: Crank-Nicolson
+!epop
+
+!split
+
+
+===== Implementation: Python program is embedded in a web service, Python Online Tutor, which enables stepwise execution and examination of variables =====
+
+@@@CODE src/solver.pyopt
+</pre></div>

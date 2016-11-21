@@ -1,0 +1,295 @@
+TITLE: Spennende kombinasjoner av informatikk og andre realfag
+AUTHOR: - hvorfor og hvordan kan programmering kombineres med de andre realfagene
+# AUTHOR: Johan Hake IT og Fysikk-lærer på Oslo katedralskole
+DATE: 25. november 2016
+
+
+!split
+
+======= Hvorfor og hvordan kan programmering kombineres med de andre realfagene =======
+
+=== Oversikt ===
+
+* Hvordan har jeg brukt informatikk og programmering i medisinsk hjerteforskning?
+* Hvorfor programmering?
+* Informatikk og programmering i læreplanen idag og hva sier Ludvigsen?
+* Kortkurs i matematisk modellering
+* Fremtiden?
+
+!split
+
+======= Først-sak-først: Takk! =======
+* Gløer Langslet som inviterer til Nettverksdag for IT lærer
+* Prof. Andrew McCulloch som veiledet meg under PostDoc oppeholdet i San Diego
+* Prof. Hans Petter Langtangen som har vært visjonær mht matematisk modellering og som har fått Olavs Thons formiddlingspris for 2016 og som den 20.10 i år gikk bort etter en langvarig kamp mot kreft
+* Tidligere kollegaer på Simula Research Laboratory
+* Jonas Van den Brink som har utviklet Python koden for strikkhoppet vi seinere skal se på
+
+!split
+
+======= Hjerte ABC: Hvert hjerteslag startes og synkroniseres av et elektrisk signal =======
+
+FIGURE: [fig/heart_scetch.svg, width=500]
+
+
+!split
+======= Hjerte ABC: Det elektriske signalet er det vi måler gjennom EKG =======
+
+FIGURE: [fig/ecg.jpg, width=650]
+
+!split
+
+======= Hjerte ABC: I hver celle trigger det elektriske signalet en forsinket sammentrekning =======
+
+!bslidecell 00
+* Kalsium gir cellen signalet om at sammentrekningen skal starte
+!eslidecell
+
+!bslidecell 01
+FIGURE: [fig/AP_Ca_contraction.svg, width=750]
+
+!eslidecell
+
+!split
+
+======= Hjerte ABC: I hver celle trigger det elektriske signalet en forsinket sammentrekning =======
+
+!bslidecell 00
+* Kalsium gir cellen signalet om at sammentrekningen skal starte
+* Kalsium slippes inn i cellen gjennom egne ionekanaler
+!eslidecell
+
+!bslidecell 01
+FIGURE: [fig/cell_membrane.jpg, width=750]
+
+!eslidecell
+
+!split
+
+=== Hvor mye kalsium som kommer ut bestemmes av en komplisert kombinasjon av geometri og kanalfunksjon ===
+
+FIGURE: [fig/sarcomere_nice_black.svg, width=800]
+
+* Vi har ikke full kvantiatativ forståelse av hva som kontrollerer
+  hvor mye kalsium som kommer inn i cellen for hvert hjerteslag
+
+!split
+=== Selve kalsiumet kommer inn i cellen i rundt 20 000 ulike områder som er for små til å studeres i fysiologiske eksperimenter ===
+
+FIGURE: [fig/sarcomere_nice_black_blowup.svg, width=800]
+
+* Gjennom matematisk modellering kan vi gi sykehusene svar på noen
+  spørsmål de ikke kan få svar på gjennom egne målinger
+
+!split
+
+### === Hvor mye kalsium som kommer ut bestemmes av en komplisert kombinasjon av geometri og kanalfunksjon ===
+### 
+### FIGURE: [fig/dyadic_cleft_black.svg, width=800]
+### 
+### !split
+
+=== Fra et sett med bilder fra et elektronmikroskop lagde jeg en geometrisk modell av et av disse 20 000 områdene ===
+
+MOVIE: [fig/segmentation_2.mp4, height=536 width=850]
+
+!split
+
+### === Så ble geometrien forfinet og annoterte med ulike aktive delene ===
+### 
+### MOVIE: [fig/Model-movie_2.mp4, height=540 width=850]
+### 
+### !split
+###
+
+=== Den geometriske modellen ble så delt opp i flere mindre deler (diskretisert) ===
+
+MOVIE: [fig/Tetrahedralized.mp4, height=540 width=850]
+
+!split
+
+=== Til slutt beskrev jeg selve kalsiumdynamikken med en matematisk modell som ble løst for ulike parameterverdier ===
+
+MOVIE: [fig/fluo_spark_2.mp4, height=546 width=850]
+
+!split
+
+======= Hva fra dette eksemplet er overførbart til bruk av IT og programmering på VGS? =======
+
+!bpop
+* Som motivasjon til å:
+  * lære seg programmering
+  * jobbe med matematisk modellering
+  * arbeide tverrfaglig
+* Sette søkelys på hvilke kunnskaper elevene trenger for å arbeide med matematisk modellering i ulike realfag
+!epop
+
+!split
+
+=== Holder det ikke med de digitale ferdighetene slik vi kjenner dem fra grunnleggende ferdigheter i læreplanen? ===
+
+!bpop
+* Digitale ferdigheter er en altfor generell betegnelse for å dekke behovet av spesifikk programmeringskompetanse
+* Det handler om mye mer enn å bare ta digital teknologi i bruk
+* Eleven vil forstå mer av den digitale teknologien hvis hen har utviklet den selv
+* I tilegg gir programmering eleven kunnskaper om problemløsning, jmf oppgaveløsning/forsøk i andre realfag
+!epop
+### * IKT 
+### * Mange IKt verktøy er 
+
+### Programmering er i sin essense tverrfaglig
+### 
+### FIGURE: [fig/LKK, width=400]
+### * Programmering er et marginalisert fag i Norge
+
+!split
+
+=== Programmering og IT er et forholdsvis lite fag i norsk skole og risikerer å fortsett være det. Men det finnes lyspunkter! ===
+
+FIGURE: [fig/computing_our_future.png, width=750]
+
+* Helt nytt (1.2.16) forsøk med valgvalg i programmering i "grunnskolen" : "http://www.udir.no/Lareplaner/Forsok-og-pagaende-arbeid/forsok-med-programmering-som-valgfag"
+* "Lær kidsa kode" : "http://kidsakoder.no"
+
+!split
+
+=== Ludvigsen-utvalget understreker viktigheten av digital kompetanse men sier ikke noe spesifikt om IT eller programmering som eget fag (foreløpig) ===
+!bslidecell 00
+* "Matematikk, statistikk og informatikk vil bli mer og mer fremtredende innenfor klassiske naturvitenskapelige disipliner som biologi, fysikk, kjemi og geofag." (s 54)
+ * Men det følges ikke opp med mer spesifikke tanker om informatikk. Derimot om matematikk.
+* Ordene kode/koding programmere/programmering finnes ikke noen steder i utredningen.
+* Men rykten tilsier at matematikk og informatikk-ansatte på universitetene har sagt fra om behovet for programmering inn i realfagene på VGS
+!eslidecell
+!bslidecell 01
+FIGURE: [fig/ludvigsen.png, width=550]
+!eslidecell
+!split
+
+=== Som vi alle veit har vi et programmeringsfag i skolen idag, IT2. Dette er mer rettet mot multimedia enn mot de andre realfagene og lar seg ikke lett kombineres med matematisk modellering. ===
+
+* Disse eksemplene er meget læreplans-relevante (EKSAMENS?!) for IT2 men de har kanskje ikke allverdens med realfag å gjøre?
+ * "Fuglequiz":"kode/fugler.html"
+ * "Rudolf":"kode/oppgaver_animasjon_9.html"
+
+!split
+
+=== Hvordan kan matematisk modellering og programmering integrerers i dagens realfag? ===
+* Vi bruker allerede matematisk modellering i mange fag!
+ * Men vi tilbyr oftest bare analytiske løsninger
+
+!bpop
+* Bevegelseslikningene for konstant aksellerasjon i fysikk: $v(t)= v_0 + a\,t;\; s = v_0\,t + a\,t^2/2$
+* S-kurven for biologiske bestand: $Y(t)= \frac{M}{1-e^{-rt}}$
+* Kjemisk likevekt: $\mathrm{K_p=\frac{[NH_3]^2}{[N_2]\cdot[H_2]^3}}$
+* Disse funksjonene og likevektsløsningen er spesialtilfeller av løsninger på differensiallikninger som kommer fra matematisk modellering
+* Hvis de skal løses analytisk må forholdene være enkle.
+* Forholdsvis enkle numeriske skjema kan brukes for å løse de opprinnelige likningene og i tillegg gjøre dem mer relevante
+!epop
+
+!split
+
+=== Løsninger man får fra numeriske skjema skiller seg fra analytiske funksjoner gjennom at vi bare kjenner løsningen på diskrete punkter i tid (og rom) ===
+
+!bslidecell 00 0.4
+* Hvis $\hat{t}$ er en liste (vektor) med tidspunkter
+!bt
+\[\hat{t}=[0, 0.2, \ldots, 1.0]\]
+!et
+* kan $y$ representere verdiene til en funksjon $f(\hat{t})$ i disse punktene.
+!eslidecell
+
+!bslidecell 01 0.6
+FIGURE: [fig/diskret_funksjon.svg, frac=0.6]
+!eslidecell
+
+!split
+
+=== Differensiallikninger finner vi i alle realfag og de kan løses med numeriske skjema som kan implementeres i et program ===
+
+* Hovedidéen er at vi gjennom differensiallikningen vet hvor mye en funksjon endrer seg når tiden endrer seg litt.
+!bpop
+* Hvis $df(t)$ er en funksjon som gir den deriverte av $y$, $\frac{dy}{dt}$, ved tiden $t$ kan vi skrive:
+* $\frac{dy}{dt}=df(t)\simeq \frac{\Delta y}{\Delta t}=>$
+* $\Delta y = df(t) \Delta t$. Her er en liten forandring i $y$, $\Delta y$ gitt ved en liten forandring i $t$, $\Delta t$.
+* Hvis vi nå har en liste med $N+1$ tidspunkter $t=[t_0, t_1, \ldots, t_N]$ hvor hvert tidspunkt gis fra det forrige som: $t_{n+1}=t_i+\Delta t$
+* kan vi formulere den neste funksjonsverdien, $y_{n+1}$ fra det forrige, $y_{n}$ gjennom: $y_{n+1}=y_i+\Delta y_i=y_i+df(t_i) \Delta t$
+* Ofte er den deriverte avhengig av funksjonsverdien: $y_i=y_i+df(t_i, y_i)$
+* Vi har et numerisk skjema!
+!epop
+
+!split
+
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
+
+FIGURE: [fig/diskret_funksjon_0.svg, width=700]
+
+* Gitt at vi har regnet ut 3 punkter: $y_0$, $y_1$, og $y_2$
+!split
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
+
+FIGURE: [fig/diskret_funksjon_1.svg, width=700]
+
+* kan vi beregne neste verdi gjennom å regne ut $\Delta y_2$
+!split
+
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
+
+FIGURE: [fig/diskret_funksjon_3.svg, width=700]
+
+* og legge til $y_2$. Vi har nå regnet ut $y_0 \ldots y_3$.
+
+!split
+
+=== Visualisering av det numeriske skjemaet med $y_i$, $\Delta y_i$ ===
+
+FIGURE: [fig/diskret_funksjon_5.svg, width=700]
+
+* Og vi kan fortsette med neste verdi $y_4$. Og sånn går nå dagene...
+
+!split
+
+=== Er dette for vanskelig? Differensiallikninger tilhører pensum i R2 og kan være litt mye for elever i andre realfag? ===
+
+* Implementeringen av skjemaet krever også en del programmering.
+!bpop
+* Kan løsningen være et nytt MX-liknende fag, som kombinerer programmering med matematisk modellering?
+* To lektorer, Andreas Haraldsrud og Per Husum på Valler videregående skole i Sandvika mener dette!
+* De forsøker å få godkjent et eget 3h programfag i studiespesialiserende utdanningsprogram. Det ligger nå hos udir for godkjenning. 
+* De tenker at man har eller har hatt Matematikk R1 og et eller flere realfag som Fysikk 1, Kjemi 1, Biologi 1, Teknologi og forskningslære 1 og Geofag 1.
+* Jeg håper at dette er en retning informatikkfaget kan gå mot enten gjennom IT1/IT2 eller at man integrerer programmering og modellering de eksisterende fagene.
+* Hva tenker dere?
+!epop
+
+!split
+
+======= Prøve ut modellering av et strikkhopp hvor Python programmeringer brukes? =======
+
+Vi skal prøve å bruke Jupyter-notebook som skal kjøre Python skriptet i nettleseren deres. 
+
+* Gå til "http://mybinder.org" : "http://mybinder.org"
+* Skriv inn "johanhake/strikkhopp" i "Tell us your GitHub repo"
+* Trykk på "make my binder"
+* Når alle stegene er klare trykker du "launch binder" til høyre
+
+!split
+
+======= Prøve ut modellering av et strikkhopp hvor Python programmeringer brukes? =======
+Metode 2, hvis den forrige ikke funket...
+
+Vi skal prøve å bruke Jupyter-notebook som skal kjøre Python skriptet i nettleseren deres. 
+* Last ned "index.ipynb" fra "http://bit.ly/strikk_hopp" : "http://bit.ly/strikk_hopp" og lagre den som "index.ipynb"
+* Gå til "https://try.jupyter.org" : "https://try.jupyter.org"
+* Gå til Files og velg "open" og så last opp (upload)
+* Last opp din fil "index.ipynb" og åpne den
+
+### ======= Programmering i grundskolen =======
+### 
+### "Sverige satser":"http://www.regeringen.se/debattartiklar/2015/09/programmering-in-pa-schemat-i-ny-skolstrategi"
+### "Norge kommer etter": "http://www.udir.no/Lareplaner/Forsok-og-pagaende-arbeid/forsok-med-programmering-som-valgfag/?utm_content=buffer627d0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"
+### "Kode kurs for ungdomskole lærere": "http://dalsaune.no/post/141167389327/kodekurs-for-l%C3%A6rere-i-trondheim"
+### 
+### !split
+
+### ===== Implementation: Python program is embedded in a web service, Python Online Tutor, which enables stepwise execution and examination of variables =====
+### 
+### @@@CODE src/solver.pyopt

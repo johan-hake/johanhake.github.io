@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="description" content="Spennende kombinasjoner av informatikk og andre realfag">
+
+<title>Spennende kombinasjoner av informatikk og andre realfag</title>
+
+
+
+
+
+
+
+<!-- reveal.js: http://lab.hakim.se/reveal-js/ -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/darkgray.css" id="theme">
+<!--
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/beigesmall.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/serif.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/darkgray.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/cbc.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/simula.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/league.css" id="theme">
+-->
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+<!-- Printing and PDF exports -->
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<style type="text/css">
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    p.caption { width: 80%; font-size: 60%; font-style: italic; text-align: left; }
+    hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .reveal .alert-text-small   { font-size: 80%;  }
+    .reveal .alert-text-large   { font-size: 130%; }
+    .reveal .alert-text-normal  { font-size: 90%;  }
+    .reveal .alert {
+             padding:8px 35px 8px 14px; margin-bottom:18px;
+             text-shadow:0 1px 0 rgba(255,255,255,0.5);
+             border:5px solid #bababa;
+             -webkit-border-radius: 14px; -moz-border-radius: 14px;
+             border-radius:14px;
+             background-position: 10px 10px;
+             background-repeat: no-repeat;
+             background-size: 38px;
+             padding-left: 30px; /* 55px; if icon */
+     }
+     .reveal .alert-block {padding-top:14px; padding-bottom:14px}
+     .reveal .alert-block > p, .alert-block > ul {margin-bottom:1em}
+     /*.reveal .alert li {margin-top: 1em}*/
+     .reveal .alert-block p+p {margin-top:5px}
+     /*.reveal .alert-notice { background-image: url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_notice.png); }
+     .reveal .alert-summary  { background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_summary.png); }
+     .reveal .alert-warning { background-image: url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_warning.png); }
+     .reveal .alert-question {background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_question.png); } */
+
+</style>
+
+
+
+<!-- Styles for table layout of slides -->
+<style type="text/css">
+td.padding {
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-right:50px;
+  padding-left:50px;
+}
+</style>
+
+</head>
+
+<body>
+<div class="reveal">
+
+<!-- Any section element inside the <div class="slides"> container
+     is displayed as a slide -->
+
+<div class="slides">
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+
+
+
+<section>
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<center><h1 style="text-align: center;">Spennende kombinasjoner av informatikk og andre realfag</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): - hvorfor og hvordan kan programmering kombineres med de andre realfagene -->
+
+<center>
+<b>- hvorfor og hvordan kan programmering kombineres med de andre realfagene</b> 
+</center>
+
+<p>&nbsp;<br>
+<!-- institution(s) -->
+
+<br>
+<!-- AUTHOR: Johan Hake IT og Fysikk-l&#230;rer p&#229; Oslo katedralskole -->
+<p>&nbsp;<br>
+<center><h4>25. november 2016</h4></center> <!-- date -->
+<br>
+</section>
+
+
+<section>
+<h1 id="___sec0">Hvorfor og hvordan kan programmering kombineres med de andre realfagene </h1>
+
+<h3 id="___sec1">Oversikt </h3>
+
+<ul>
+<p><li> Hvordan har jeg brukt informatikk og programmering i medisinsk hjerteforskning?</li>
+<p><li> Hvorfor programmering?</li>
+<p><li> Informatikk og programmering i l&#230;replanen idag og hva sier Ludvigsen?</li>
+<p><li> Kortkurs i matematisk modellering</li>
+<p><li> Fremtiden?</li>
+</ul>
+</section>
+
+
+<section>
+<h1 id="___sec2">F&#248;rst-sak-f&#248;rst: Takk! </h1>
+
+<ul>
+<p><li> Gl&#248;er Langslet som inviterer til Nettverksdag for IT l&#230;rer</li>
+<p><li> Prof. Andrew McCulloch som veiledet meg under PostDoc oppeholdet i San Diego</li>
+<p><li> Prof. Hans Petter Langtangen som har v&#230;rt visjon&#230;r mht matematisk modellering og som har f&#229;tt Olavs Thons formiddlingspris for 2016 og som den 20.10 i &#229;r gikk bort etter en langvarig kamp mot kreft</li>
+<p><li> Tidligere kollegaer p&#229; Simula Research Laboratory</li>
+<p><li> Jonas Van den Brink som har utviklet Python koden for strikkhoppet vi seinere skal se p&#229;</li>
+</ul>
+</section>
+
+
+<section>
+<h1 id="___sec3">Hjerte ABC: Hvert hjerteslag startes og synkroniseres av et elektrisk signal </h1>
+
+<p>
+<center><p><img src="fig/heart_scetch.svg" align="bottom" width=500></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec4">Hjerte ABC: Det elektriske signalet er det vi m&#229;ler gjennom EKG </h1>
+
+<p>
+<center><p><img src="fig/ecg.jpg" align="bottom" width=650></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec5">Hjerte ABC: I hver celle trigger det elektriske signalet en forsinket sammentrekning </h1>
+
+<p>
+
+<table border="0">
+<tr>
+<td class="padding">
+<ul>
+<p><li> Kalsium gir cellen signalet om at sammentrekningen skal starte</li>
+</ul>
+<p>
+</td>
+<td class="padding">
+<center><p><img src="fig/AP_Ca_contraction.svg" align="bottom" width=750></p></center>
+
+<p>
+</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+<h1 id="___sec6">Hjerte ABC: I hver celle trigger det elektriske signalet en forsinket sammentrekning </h1>
+
+<p>
+
+<table border="0">
+<tr>
+<td class="padding">
+<ul>
+<p><li> Kalsium gir cellen signalet om at sammentrekningen skal starte</li>
+<p><li> Kalsium slippes inn i cellen gjennom egne ionekanaler</li>
+</ul>
+<p>
+</td>
+<td class="padding">
+<center><p><img src="fig/cell_membrane.jpg" align="bottom" width=750></p></center>
+
+<p>
+</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+
+<h3 id="___sec7">Hvor mye kalsium som kommer ut bestemmes av en komplisert kombinasjon av geometri og kanalfunksjon </h3>
+
+<p>
+<center><p><img src="fig/sarcomere_nice_black.svg" align="bottom" width=800></p></center>
+
+<ul>
+<p><li> Vi har ikke full kvantiatativ forst&#229;else av hva som kontrollerer
+  hvor mye kalsium som kommer inn i cellen for hvert hjerteslag</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec8">Selve kalsiumet kommer inn i cellen i rundt 20 000 ulike omr&#229;der som er for sm&#229; til &#229; studeres i fysiologiske eksperimenter </h3>
+
+<p>
+<center><p><img src="fig/sarcomere_nice_black_blowup.svg" align="bottom" width=800></p></center>
+
+<ul>
+<p><li> Gjennom matematisk modellering kan vi gi sykehusene svar p&#229; noen
+  sp&#248;rsm&#229;l de ikke kan f&#229; svar p&#229; gjennom egne m&#229;linger</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec9">Fra et sett med bilder fra et elektronmikroskop lagde jeg en geometrisk modell av et av disse 20 000 omr&#229;dene </h3>
+
+<p>
+
+<div>
+<video  loop controls width='850' height='536' preload='auto'>
+    <source src='fig/segmentation_2.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+</section>
+
+
+<section>
+
+<h3 id="___sec10">Den geometriske modellen ble s&#229; delt opp i flere mindre deler (diskretisert) </h3>
+
+<p>
+
+<div>
+<video  loop controls width='850' height='540' preload='auto'>
+    <source src='fig/Tetrahedralized.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+</section>
+
+
+<section>
+
+<h3 id="___sec11">Til slutt beskrev jeg selve kalsiumdynamikken med en matematisk modell som ble l&#248;st for ulike parameterverdier </h3>
+
+<p>
+
+<div>
+<video  loop controls width='850' height='546' preload='auto'>
+    <source src='fig/fluo_spark_2.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+</section>
+
+
+<section>
+<h1 id="___sec12">Hva fra dette eksemplet er overf&#248;rbart til bruk av IT og programmering p&#229; VGS? </h1>
+
+<ul>
+<p><li class="fragment"> Som motivasjon til &#229;:</li>
+
+<ul>
+
+<p><li class="fragment"> l&#230;re seg programmering</li>
+
+<p><li class="fragment"> jobbe med matematisk modellering</li>
+
+<p><li class="fragment"> arbeide tverrfaglig</li>
+</ul>
+<p><li class="fragment"> Sette s&#248;kelys p&#229; hvilke kunnskaper elevene trenger for &#229; arbeide med matematisk modellering i ulike realfag</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec13">Holder det ikke med de digitale ferdighetene slik vi kjenner dem fra grunnleggende ferdigheter i l&#230;replanen? </h3>
+
+<ul>
+<p><li class="fragment"> Digitale ferdigheter er en altfor generell betegnelse for &#229; dekke behovet av spesifikk programmeringskompetanse</li>
+<p><li class="fragment"> Det handler om mye mer enn &#229; bare ta digital teknologi i bruk</li>
+<p><li class="fragment"> Eleven vil forst&#229; mer av den digitale teknologien hvis hen har utviklet den selv</li>
+<p><li class="fragment"> I tilegg gir programmering eleven kunnskaper om probleml&#248;sning, jmf oppgavel&#248;sning/fors&#248;k i andre realfag</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec14">Programmering og IT er et forholdsvis lite fag i norsk skole og risikerer &#229; fortsett v&#230;re det. Men det finnes lyspunkter! </h3>
+
+<p>
+<center><p><img src="fig/computing_our_future.png" align="bottom" width=750></p></center>
+
+<ul>
+<p><li> Helt nytt (1.2.16) fors&#248;k med valgvalg i programmering i <a href="http://www.udir.no/Lareplaner/Forsok-og-pagaende-arbeid/forsok-med-programmering-som-valgfag" target="_blank">grunnskolen</a></li>
+<p><li> <a href="http://kidsakoder.no" target="_blank">L&#230;r kidsa kode</a></li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec15">Ludvigsen-utvalget understreker viktigheten av digital kompetanse men sier ikke noe spesifikt om IT eller programmering som eget fag (forel&#248;pig) </h3>
+
+
+<table border="0">
+<tr>
+<td class="padding">
+<ul>
+<p><li> "Matematikk, statistikk og informatikk vil bli mer og mer fremtredende innenfor klassiske naturvitenskapelige disipliner som biologi, fysikk, kjemi og geofag." (s 54)</li>
+
+<ul>
+ <p><li> Men det f&#248;lges ikke opp med mer spesifikke tanker om informatikk. Derimot om matematikk.</li>
+</ul>
+<p><li> Ordene kode/koding programmere/programmering finnes ikke noen steder i utredningen.</li>
+<p><li> Men rykten tilsier at matematikk og informatikk-ansatte p&#229; universitetene har sagt fra om behovet for programmering inn i realfagene p&#229; VGS</li>
+</ul>
+<p>
+</td>
+<td class="padding">
+<center><p><img src="fig/ludvigsen.png" align="bottom" width=550></p></center>
+</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+
+<h3 id="___sec16">Som vi alle veit har vi et programmeringsfag i skolen idag, IT2. Dette er mer rettet mot multimedia enn mot de andre realfagene og lar seg ikke lett kombineres med matematisk modellering. </h3>
+
+<ul>
+<p><li> Disse eksemplene er meget l&#230;replans-relevante (EKSAMENS?!) for IT2 men de har kanskje ikke allverdens med realfag &#229; gj&#248;re?</li>
+
+<ul>
+ <p><li> <a href="kode/fugler.html" target="_blank">Fuglequiz</a></li>
+ <p><li> <a href="kode/oppgaver_animasjon_9.html" target="_blank">Rudolf</a></li>
+</ul>
+<p>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec17">Hvordan kan matematisk modellering og programmering integrerers i dagens realfag? </h3>
+
+<ul>
+<p><li> Vi bruker allerede matematisk modellering i mange fag!</li>
+
+<ul>
+ <p><li> Men vi tilbyr oftest bare analytiske l&#248;sninger</li>
+</ul>
+<p>
+</ul>
+<ul>
+<p><li class="fragment"> Bevegelseslikningene for konstant aksellerasjon i fysikk: \( v(t)= v_0 + a\,t;\; s = v_0\,t + a\,t^2/2 \)</li>
+<p><li class="fragment"> S-kurven for biologiske bestand: \( Y(t)= \frac{M}{1-e^{-rt}} \)</li>
+<p><li class="fragment"> Kjemisk likevekt: \( \mathrm{K_p=\frac{[NH_3]^2}{[N_2]\cdot[H_2]^3}} \)</li>
+<p><li class="fragment"> Disse funksjonene og likevektsl&#248;sningen er spesialtilfeller av l&#248;sninger p&#229; differensiallikninger som kommer fra matematisk modellering</li>
+<p><li class="fragment"> Hvis de skal l&#248;ses analytisk m&#229; forholdene v&#230;re enkle.</li>
+<p><li class="fragment"> Forholdsvis enkle numeriske skjema kan brukes for &#229; l&#248;se de opprinnelige likningene og i tillegg gj&#248;re dem mer relevante</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec18">L&#248;sninger man f&#229;r fra numeriske skjema skiller seg fra analytiske funksjoner gjennom at vi bare kjenner l&#248;sningen p&#229; diskrete punkter i tid (og rom) </h3>
+
+<p>
+
+<table border="0">
+<tr>
+<td class="padding">
+<ul>
+<p><li> Hvis \( \hat{t} \) er en liste (vektor) med tidspunkter</li>
+</ul>
+<p>&nbsp;<br>
+$$\hat{t}=[0, 0.2, \ldots, 1.0]$$
+<p>&nbsp;<br>
+
+
+<ul>
+<p><li> kan \( y \) representere verdiene til en funksjon \( f(\hat{t}) \) i disse punktene.</li>
+</ul>
+<p>
+</td>
+<td class="padding">
+<center><p><img src="fig/diskret_funksjon.svg" align="bottom" ></p></center>
+</td>
+</tr>
+</table>
+</section>
+
+
+<section>
+
+<h3 id="___sec19">Differensiallikninger finner vi i alle realfag og de kan l&#248;ses med numeriske skjema som kan implementeres i et program </h3>
+
+<ul>
+<p><li> Hovedid&#233;en er at vi gjennom differensiallikningen vet hvor mye en funksjon endrer seg n&#229;r tiden endrer seg litt.</li>
+</ul>
+<ul>
+<p><li class="fragment"> Hvis \( df(t) \) er en funksjon som gir den deriverte av \( y \), \( \frac{dy}{dt} \), ved tiden \( t \) kan vi skrive:</li>
+<p><li class="fragment"> \( \frac{dy}{dt}=df(t)\simeq \frac{\Delta y}{\Delta t}=> \)</li>
+<p><li class="fragment"> \( \Delta y = df(t) \Delta t \). Her er en liten forandring i \( y \), \( \Delta y \) gitt ved en liten forandring i \( t \), \( \Delta t \).</li>
+<p><li class="fragment"> Hvis vi n&#229; har en liste med \( N+1 \) tidspunkter \( t=[t_0, t_1, \ldots, t_N] \) hvor hvert tidspunkt gis fra det forrige som: \( t_{n+1}=t_i+\Delta t \)</li>
+<p><li class="fragment"> kan vi formulere den neste funksjonsverdien, \( y_{n+1} \) fra det forrige, \( y_{n} \) gjennom: \( y_{n+1}=y_i+\Delta y_i=y_i+df(t_i) \Delta t \)</li>
+<p><li class="fragment"> Ofte er den deriverte avhengig av funksjonsverdien: \( y_i=y_i+df(t_i, y_i) \)</li>
+<p><li class="fragment"> Vi har et numerisk skjema!</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec20">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
+
+<p>
+<center><p><img src="fig/diskret_funksjon_0.svg" align="bottom" width=700></p></center>
+
+<ul>
+<p><li> Gitt at vi har regnet ut 3 punkter: \( y_0 \), \( y_1 \), og \( y_2 \)</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec21">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
+
+<p>
+<center><p><img src="fig/diskret_funksjon_1.svg" align="bottom" width=700></p></center>
+
+<ul>
+<p><li> kan vi beregne neste verdi gjennom &#229; regne ut \( \Delta y_2 \)</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec22">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
+
+<p>
+<center><p><img src="fig/diskret_funksjon_3.svg" align="bottom" width=700></p></center>
+
+<ul>
+<p><li> og legge til \( y_2 \). Vi har n&#229; regnet ut \( y_0 \ldots y_3 \).</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec23">Visualisering av det numeriske skjemaet med \( y_i \), \( \Delta y_i \) </h3>
+
+<p>
+<center><p><img src="fig/diskret_funksjon_5.svg" align="bottom" width=700></p></center>
+
+<ul>
+<p><li> Og vi kan fortsette med neste verdi \( y_4 \). Og s&#229;nn g&#229;r n&#229; dagene...</li>
+</ul>
+</section>
+
+
+<section>
+
+<h3 id="___sec24">Er dette for vanskelig? Differensiallikninger tilh&#248;rer pensum i R2 og kan v&#230;re litt mye for elever i andre realfag? </h3>
+
+<ul>
+<p><li> Implementeringen av skjemaet krever ogs&#229; en del programmering.</li>
+</ul>
+<ul>
+<p><li class="fragment"> Kan l&#248;sningen v&#230;re et nytt MX-liknende fag, som kombinerer programmering med matematisk modellering?</li>
+<p><li class="fragment"> To lektorer, Andreas Haraldsrud og Per Husum p&#229; Valler videreg&#229;ende skole i Sandvika mener dette!</li>
+<p><li class="fragment"> De har fors&#248;kt &#229; f&#229; godkjent et eget 3h programfag i studiespesialiserende utdanningsprogram</li>
+<p><li class="fragment"> De tenker at man kan ta dette faget samtidig som R2 og en av Fysikk 2, Biologi2, Kjemi2, eller Geofag 2.</li>
+<p><li class="fragment"> ... men de har f&#229;tt avslag for h&#248;st 2016.</li>
+<p><li class="fragment"> Jeg h&#229;per at dette er en retning informatikkfaget kan g&#229; mot og at det f&#229;r gjennomslag for neste studie&#229;r og at Ludvigsen-utvalget f&#229;r h&#248;rt om det n&#229;r de skal se p&#229; de ulike fagplanene.</li>
+<p><li class="fragment"> Hva tenker dere?</li>
+</ul>
+</section>
+
+
+<section>
+<h1 id="___sec25">Pr&#248;ve ut modellering av et strikkhopp hvor Python programmeringer brukes? </h1>
+
+<p>
+Vi skal pr&#248;ve &#229; bruke Jupyter-notebook som skal kj&#248;re Python skriptet i nettleseren deres. 
+
+<ul>
+<p><li> G&#229; til <a href="http://mybinder.org" target="_blank">http://mybinder.org</a></li>
+<p><li> Skriv inn "johanhake/strikkhopp" i "Tell us your GitHub repo"</li>
+<p><li> Trykk p&#229; "make my binder"</li>
+<p><li> N&#229;r alle stegene er klare trykker du "launch binder" til h&#248;yre</li>
+</ul>
+</section>
+
+
+<section>
+<h1 id="___sec26">Pr&#248;ve ut modellering av et strikkhopp hvor Python programmeringer brukes? </h1>
+Metode 2, hvis den forrige ikke funket...
+
+<p>
+Vi skal pr&#248;ve &#229; bruke Jupyter-notebook som skal kj&#248;re Python skriptet i nettleseren deres. 
+
+<ul>
+<p><li> Last ned "index.ipynb" fra <a href="http://bit.ly/strikk_hopp" target="_blank">http://bit.ly/strikk_hopp</a> og lagre den som "index.ipynb"</li>
+<p><li> G&#229; til <a href="https://try.jupyter.org" target="_blank">https://try.jupyter.org</a></li>
+<p><li> G&#229; til Files og velg "open" og s&#229; last opp (upload)</li>
+<p><li> Last opp din fil "index.ipynb" og &#229;pne den</li>
+</ul>
+</section>
+
+
+
+</div> <!-- class="slides" -->
+</div> <!-- class="reveal" -->
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+    // Display navigation controls in the bottom right corner
+    controls: true,
+
+    // Display progress bar (below the horiz. slider)
+    progress: true,
+
+    // Display the page number of the current slide
+    slideNumber: true,
+
+    // Push each slide change to the browser history
+    history: false,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Vertical centering of slides
+    //center: true,
+    center: false,
+
+    // Enables touch navigation on devices with touch input
+    touch: true,
+
+    // Loop the presentation
+    loop: false,
+
+    // Change the presentation direction to be RTL
+    rtl: false,
+
+    // Turns fragments on and off globally
+    fragments: true,
+
+    // Flags if the presentation is running in an embedded mode,
+    // i.e. contained within a limited portion of the screen
+    embedded: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    autoSlide: 0,
+
+    // Stop auto-sliding after user input
+    autoSlideStoppable: true,
+
+    // Enable slide navigation via mouse wheel
+    mouseWheel: false,
+
+    // Hides the address bar on mobile devices
+    hideAddressBar: true,
+
+    // Opens links in an iframe preview overlay
+    previewLinks: false,
+
+    // Transition style
+    transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Transition speed
+    transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page slide backgrounds
+    backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
+
+    // Number of slides away from the current that are visible
+    viewDistance: 3,
+
+    // Parallax background image
+    //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+    // Parallax background size
+    //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+
+    theme: Reveal.getQueryHash().theme, // available themes are in reveal.js/css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+});
+
+Reveal.initialize({
+    dependencies: [
+        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+        { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+        // Interpret Markdown in <section> elements
+        { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+        // Syntax highlight for <code> elements
+        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+        // Zoom in and out with Alt+click
+        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+        // Speaker notes
+        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+        // Remote control your reveal.js presentation using a touch device
+        //{ src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+        // MathJax
+        //{ src: 'reveal.js/plugin/math/math.js', async: true }
+    ]
+});
+
+Reveal.initialize({
+
+    // The "normal" size of the presentation, aspect ratio will be preserved
+    // when the presentation is scaled to fit different resolutions. Can be
+    // specified using percentage units.
+    width: 1240,  // original: 960,
+    height: 700,
+
+    // Factor of the display size that should remain empty around the content
+    margin: 0.1,
+
+    // Bounds for smallest/largest possible scale to apply to content
+    minScale: 0.2,
+    maxScale: 1.0
+
+});
+</script>
+
+<!-- begin footer logo
+<div style="position: absolute; bottom: 0px; left: 0; margin-left: 0px">
+<img src="somelogo.png">
+</div>
+     end footer logo -->
+
+
+
+</body>
+</html>
