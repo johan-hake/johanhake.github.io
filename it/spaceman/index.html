@@ -96,6 +96,7 @@
 
         var id;
 
+        // Har jeg vært inne på denne siden tidligere?
         if(localStorage.spaceID) {
             id = localStorage.spaceID;
         } else {
@@ -107,18 +108,23 @@
             theName.innerHTML = this.value;
         };
 
+        // Hva skal ske når vi har registrert navnet?
         playGame.onsubmit = function(evt) {
             evt.preventDefault();
+
+            // Hent oppføringen i databasen, eventuellt hent den hvis den allerede fantes der.
             var ref = db.ref("astronauter/" + id);
+
+            // Oppdater databasen
             ref.set({
                 name: inpName.value,
                 xdir: 1,
                 ydir: 0
             });
+
+            // Send brukeren til styresiden
             document.location.href = "remote.html";
         };
-
-
 
     </script>
 </body>

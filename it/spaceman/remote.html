@@ -35,6 +35,11 @@
             <button class="button large expanded success" id="btnDown">DOWN</button>
         </div>
     </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <button class="button large expanded success" id="btnDelete">DELETE</button>
+        </div>
+    </div>
 
 
     <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
@@ -56,7 +61,7 @@
         var btnRight = document.getElementById("btnRight");
         var btnUp = document.getElementById("btnUp");
         var btnDown = document.getElementById("btnDown");
-
+        var btnDown = document.getElementById("btnDelete");
 
         var db = firebase.database();
 
@@ -76,6 +81,7 @@
 
         }
 
+        // Oppdater retning
         function setDirection(evt) {
 
             var id = localStorage.spaceID;
@@ -112,10 +118,28 @@
             }
         }
 
+        // Ta bort en astronaut
+        function deleteAstronaut(){
+
+            // Sjekke om du virkeligen vill slette astronauten!
+            if (!confirm("Vill du slette astronauten?")){
+                return;
+            }
+
+            // Slett oppføringen i databasen
+            db.ref("astronauter/" + id).remove();
+            localStorage.removeItem("spaceID");
+
+            // Send brukeren tilbake til index.html
+            document.location.href = "index.html";
+
+        }
+
         btnLeft.addEventListener("click", setDirection);
         btnRight.addEventListener("click", setDirection);
         btnUp.addEventListener("click", setDirection);
         btnDown.addEventListener("click", setDirection);
+        btnDelete.addEventListener("click", deleteAstronaut);
 
 
     </script>
