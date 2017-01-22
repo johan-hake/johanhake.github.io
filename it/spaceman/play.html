@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Play the game</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'PT Sans Narrow', sans-serif;
+            text-align: center;
+            height: 100vh;
+        }
+        #stage {
+            height: 100vh;
+        }
+        .spaceman {
+            background-image: url("spaceman100.svg");
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            min-width: 100px;
+            min-height: 126px;
+            margin-left: -60px;
+            margin-top: -50px;
+            transform: scale(1);
+        }
+        .spaceman > p {
+            color: white;
+            position: absolute;
+            text-align: center;
+            left: 12px;
+            width: 100%;
+            text-shadow: 2px 2px 0 black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="stage">
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCGnjNtEvk7gAFjroYZ1ezYSnMTtPL2ZzE",
+            authDomain: "spaceman-e8df3.firebaseapp.com",
+            databaseURL: "https://spaceman-e8df3.firebaseio.com",
+            storageBucket: "spaceman-e8df3.appspot.com",
+            messagingSenderId: "248472684381"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script>
+
+        // Databasen fra firebase
+        var db = firebase.database();
+
+        // Henter tabellen som lagrer astronautene
+        var all = db.ref("astronauter");
+        var stage = document.getElementById("stage");
+
+        var astronauter = new Map();
+        var viFlyr;
+
+        function fly() {
+
+            for(var a of astronauter.values()) {
+                a.x += a.xspeed * a.xdir;
+                a.y += a.yspeed * a.ydir;
+                a.style.left = a.x + "px";
+                a.style.top = a.y + "px";
+
+                if(a.x > innerWidth) {
+                    a.x = 0;
+                }
+                if(a.x < 0) {
+                    a.x = innerWidth;
+                }
+                if(a.y > innerHeight){
+                    a.y = 0;
+                }
+                if(a.y < 0) {
+                    a.y = innerHeight;
+                }
+            }
+
+
+            viFlyr = requestAnimationFrame(fly);
+
+        }
+
+
+        function leggTilAstronaut(astronaut, x, y, key) {
+
+            var meg = db.ref("astronauter/" + key);
+
+            astronaut.xspeed = 3;
+            astronaut.yspeed = 5;
+            astronaut.w = 100;
+            astronaut.h = 120;
+            astronaut.x = x;
+            astronaut.y = y;
+            astronaut.key = key;
+
+            astronaut.xdir = 1;
+            astronaut.ydir = 0;
+
+            astronauter.set(astronaut.key, astronaut);
+            console.log(astronaut.key);
+
+
+
+        }
+
+        function addAstronauts(snap) {
+            var user = snap.val();
+            var astronaut = document.createElement("div");
+            astronaut.className = "spaceman";
+            astronaut.innerHTML = "<p>" + user.name + "</p>";
+
+            stage.appendChild(astronaut);
+
+            var xpos = Math.random() * innerWidth;
+            var ypos = Math.random() * innerHeight;
+            astronaut.style.left = xpos + "px";
+            astronaut.style.top = ypos + "px";
+
+            var enterSpace = astronaut.animate([
+                {transform: "scale(8)", left: innerWidth/2 + "px", top: innerHeight/2 + "px"},
+                {transform: "scale(1)", left: xpos + "px", top: ypos + "px"}
+            ], {
+                duration: 1000,
+                easing: "ease-out"
+            });
+
+            enterSpace.onfinish = function() {
+                leggTilAstronaut(astronaut, xpos, ypos, snap.key);
+            }
+
+        }
+
+        function setDirection(snap) {
+            var user = snap.val();
+
+            var newXDIR = user.xdir;
+            var newYDIR = user.ydir;
+
+            var astronaut = astronauter.get(snap.key);
+
+            astronaut.xdir = newXDIR;
+            astronaut.ydir = newYDIR;
+
+            if(newXDIR === undefined) {
+                astronaut.xdir = 1;
+                astronaut.ydir = 0;
+            }
+
+            astronaut.innerHTML = "<p>" + user.name + "</p>";
+
+            cancelAnimationFrame(viFlyr);
+            viFlyr = requestAnimationFrame(fly);
+
+            console.log(astronauter);
+
+        }
+
+
+        all.on("child_added", addAstronauts);
+        all.on("child_changed", setDirection);
+
+        fly();
+
+    </script>
+</body>
+</html>
