@@ -130,7 +130,7 @@
         }
 
         // Legger til en astronaut. Callback funksjon som registreres i databasen.
-        function addAstronauts(snap) {
+        function addAstronaut(snap) {
 
             // Få tak på database enheten som en objektkopi.
             var user = snap.val();
@@ -185,19 +185,31 @@
                 astronaut.ydir = 0;
             }
 
-            astronaut.innerHTML = "<p>" + user.name + "</p>";
-
-            // cancelAnimationFrame(viFlyr);
-            // viFlyr = requestAnimationFrame(fly);
+            // astronaut.innerHTML = "<p>" + user.name + "</p>";
 
             console.log(astronauter);
 
         }
 
+        // Funksjon til å ta bort en astronaut
+        function removeAstronaut(snap) {
 
-        all.on("child_added", addAstronauts);
+            // Få tilgang på HTML elementet
+            var astronaut = astronauter.get(snap.key);
+
+            // Tar det bort fra stage
+            stage.removeChild(astronaut);
+
+            // Tar bort det fra astronauter mapen
+            delete astronauter[snap.key()];
+        }
+
+        // De tre callback funksjonene
+        all.on("child_removed", removeAstronaut);
+        all.on("child_added", addAstronaut);
         all.on("child_changed", setDirection);
 
+        // Setter igang animasjonen
         fly();
 
     </script>
