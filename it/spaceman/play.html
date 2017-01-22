@@ -12,9 +12,13 @@
             text-align: center;
             height: 100vh;
         }
+
+        /* Div for alle spacemen */
         #stage {
             height: 100vh;
         }
+
+        /* Alle space man diver får denne cssen */
         .spaceman {
             background-image: url("spaceman100.svg");
             position: absolute;
@@ -26,6 +30,8 @@
             margin-top: -50px;
             transform: scale(1);
         }
+
+        /* Alle p element i et spacemann element får denne cssen */
         .spaceman > p {
             color: white;
             position: absolute;
@@ -64,17 +70,26 @@
         var all = db.ref("astronauter");
         var stage = document.getElementById("stage");
 
+        // Samler aller astronautelementene i en map
         var astronauter = new Map();
+
+        // Variabel som holder på request animasjon frame referansen.
         var viFlyr;
 
+        // Oppdater alle astronauter
         function fly() {
 
+            // Går igjennom alle astronautobjekter
             for(var a of astronauter.values()) {
+
+                // Oppdaterer x og y posisjonene
+                // Er det greit å bare bruke egenskaper direkte på htmlelement?
                 a.x += a.xspeed * a.xdir;
                 a.y += a.yspeed * a.ydir;
                 a.style.left = a.x + "px";
                 a.style.top = a.y + "px";
 
+                // Sjekker om vi er utenfor skjermen
                 if(a.x > innerWidth) {
                     a.x = 0;
                 }
@@ -89,16 +104,15 @@
                 }
             }
 
-
+            // Lar funksjonen rekursivt kalle på seg selv.
             viFlyr = requestAnimationFrame(fly);
 
         }
 
-
+        // Funksjon som kalles fra database callbacken når en astronaut blir lagt til.
         function leggTilAstronaut(astronaut, x, y, key) {
 
-            var meg = db.ref("astronauter/" + key);
-
+            // Setter utgangs egenskaper til astronaut elementet.
             astronaut.xspeed = 3;
             astronaut.yspeed = 5;
             astronaut.w = 100;
@@ -113,23 +127,28 @@
             astronauter.set(astronaut.key, astronaut);
             console.log(astronaut.key);
 
-
-
         }
 
+        // Legger til en astronaut. Callback funksjon som registreres i databasen.
         function addAstronauts(snap) {
+
+            // Få tak på database enheten som en objektkopi.
             var user = snap.val();
+
+            // Lage en astronaut div og legg inn navnet
             var astronaut = document.createElement("div");
             astronaut.className = "spaceman";
             astronaut.innerHTML = "<p>" + user.name + "</p>";
 
             stage.appendChild(astronaut);
 
+            // Første x og y posisjon er tilfeldig
             var xpos = Math.random() * innerWidth;
             var ypos = Math.random() * innerHeight;
             astronaut.style.left = xpos + "px";
             astronaut.style.top = ypos + "px";
 
+            // Lager en animasjon for å legge til astronauten
             var enterSpace = astronaut.animate([
                 {transform: "scale(8)", left: innerWidth/2 + "px", top: innerHeight/2 + "px"},
                 {transform: "scale(1)", left: xpos + "px", top: ypos + "px"}
@@ -138,18 +157,24 @@
                 easing: "ease-out"
             });
 
+            // Når astronauten har kommet til syne og start-animasjonen er på plass oppdaterer vi astronauten.
+            // NOTE: Vi kunne lagt allt dette inn i den samme funksjonen.
             enterSpace.onfinish = function() {
                 leggTilAstronaut(astronaut, xpos, ypos, snap.key);
             }
-
         }
 
+        // Oppdaterer rettningn når database enheten har blitt oppdatert.
         function setDirection(snap) {
+
+            // Få database enheten som et objekt
             var user = snap.val();
 
+            // Anta at vi har fått en ny x eller y retning
             var newXDIR = user.xdir;
             var newYDIR = user.ydir;
 
+            // Fra enhetens nøkkel skaffer vi html elementet.
             var astronaut = astronauter.get(snap.key);
 
             astronaut.xdir = newXDIR;
@@ -162,8 +187,8 @@
 
             astronaut.innerHTML = "<p>" + user.name + "</p>";
 
-            cancelAnimationFrame(viFlyr);
-            viFlyr = requestAnimationFrame(fly);
+            // cancelAnimationFrame(viFlyr);
+            // viFlyr = requestAnimationFrame(fly);
 
             console.log(astronauter);
 
