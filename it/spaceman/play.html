@@ -151,8 +151,8 @@
 
             // Lager en animasjon for å legge til astronauten
             var enterSpace = astronaut.animate([
-                {transform: "scale(8)", left: innerWidth/2 + "px", top: innerHeight/2 + "px"},
-                {transform: "scale(1)", left: xpos + "px", top: ypos + "px"}
+                {transform: "scale(8)", opacity: 0, left: innerWidth/2 + "px", top: innerHeight/2 + "px"},
+                {transform: "scale(1)", opacity: 1, left: xpos + "px", top: ypos + "px"}
             ], {
                 duration: 1000,
                 easing: "ease-out"
@@ -198,11 +198,25 @@
             // Få tilgang på HTML elementet
             var astronaut = astronauter.get(snap.key);
 
-            // Tar det bort fra stage
-            stage.removeChild(astronaut);
+            // Lager en animasjon for å legge til astronauten
+            var leaveSpace = astronaut.animate([
+                {transform: "scale(1)", opacity: 1, offset: 0.},
+                {transform: "scale(2)", opacity: 1, offset: 0.1},
+                {transform: "scale(0)", opacity: 0, offset: 1.}
+            ], {
+                duration: 1000,
+                easing: "ease"
+            });
 
-            // Tar bort det fra astronauter mapen
-            delete astronauter[snap.key()];
+            leaveSpace.onfinish = function() {
+
+                // Tar det bort fra stage
+                stage.removeChild(astronaut);
+
+                // Tar bort det fra astronauter mapen
+                delete astronauter[snap.key()];
+            }
+
         }
 
         // De tre callback funksjonene
