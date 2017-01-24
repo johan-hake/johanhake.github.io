@@ -111,9 +111,9 @@
         }
 
         // Funksjon som kalles fra database callbacken når en astronaut blir lagt til.
-        function leggTilAstronaut(astronaut, x, y, key) {
+        function leggTilAstronaut(astronaut, x, y, key, user) {
 
-            // Setter utgangs egenskaper til astronaut elementet.
+            // Setter utgangsegenskaper til astronaut elementet.
             astronaut.xspeed = 3;
             astronaut.yspeed = 5;
             astronaut.w = 100;
@@ -122,8 +122,14 @@
             astronaut.y = y;
             astronaut.key = key;
 
-            astronaut.xdir = 1;
-            astronaut.ydir = 0;
+            // Om retning er satt på forhånd altså om vi leser astronauten fra databasen
+            if (user.xdir || user.ydir) {
+                astronaut.xdir = user.xdir;
+                astronaut.ydir = user.ydir;
+            } else {
+                astronaut.xdir = 1;
+                astronaut.ydir = 0;
+            }
 
             astronauter.set(astronaut.key, astronaut);
             console.log(astronaut.key);
@@ -161,7 +167,7 @@
             // Når astronauten har kommet til syne og start-animasjonen er på plass oppdaterer vi astronauten.
             // NOTE: Vi kunne lagt allt dette inn i den samme funksjonen.
             enterSpace.onfinish = function() {
-                leggTilAstronaut(astronaut, xpos, ypos, snap.key);
+                leggTilAstronaut(astronaut, xpos, ypos, snap.key, user);
             }
         }
 
